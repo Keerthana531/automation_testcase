@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="YolojAutomationTesting">
+	<test name="Yoloj Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="" />
+			
+
+		</classes>
+
+	</test>
+
+</suite>
