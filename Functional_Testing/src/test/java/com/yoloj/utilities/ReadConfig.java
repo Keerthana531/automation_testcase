@@ -27,6 +27,12 @@ Properties pro;
 		return url;
 	}
 	
+	public String getLoginURL()
+	{
+		String url=pro.getProperty("URL");
+		return url;
+	}
+	
 	public String getUsername()
 	{
 	String username=pro.getProperty("username");
@@ -55,6 +61,12 @@ Properties pro;
 	{
 	String firefoxpath=pro.getProperty("firefoxpath");
 	return firefoxpath;
+	}
+	
+	public String getLoginDataExcel()
+	{
+	String loginData=pro.getProperty("loginData");
+	return loginData;
 	}
 
 }
