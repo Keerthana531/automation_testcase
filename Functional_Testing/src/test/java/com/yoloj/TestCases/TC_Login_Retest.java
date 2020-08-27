@@ -1,25 +1,35 @@
 package com.yoloj.TestCases;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+
+import com.yoloj.PageObjects.LoginPageObject;
 
 public class TC_Login_Retest extends BaseClass {
   
 	@Test
 	public void loginTestCase() {
+		try {
+			
 		//loading the login Webpage
 		driver.get(readconfig.getLoginURL());
 		
+		//get instance of LoginPageObjectModel
+		LoginPageObject loginPage = new LoginPageObject(driver);
+		
 		//initialization of Excel file
-		File file = new File("C:\\Users\\Arun\\Desktop\\LoginData.xlsx");
-		FileInputStream fis=new FileInputStream(file);
+		FileInputStream fis=setFileInput(readconfig.getLoginDataExcel());
+		System.out.println("worked");
 		
 		//Workbook
 		XSSFWorkbook book=new XSSFWorkbook(fis);
-		
+		System.out.println("below workbook");
 		//sheet
 		XSSFSheet sheet=book.getSheetAt(0);
 		
@@ -37,16 +47,19 @@ public class TC_Login_Retest extends BaseClass {
 			password = sheet.getRow(i).getCell(1).getStringCellValue();
 			
 			//passing the data 
-			driver.findElement(By.id("email")).sendKeys(email+Keys.TAB+password);
-				
+			loginPage.setEmail(email);
+			loginPage.setPassword(password);
+			
+			
 			//Checking whether the element is Displayed or not
-			if(driver.findElements(By.id("email-helper-text")).size() != 0) {
-				email_errorMsg=driver.findElement(By.id("email-helper-text")).getText();}
-			else if (driver.findElements(By.id("password-helper-text")).size() != 0) {
-				password_errorMsg=driver.findElement(By.id("password-helper-text")).getText();}
+			if(driver.findElements(By.id(loginPage.emailErrorAll)).size() != 0) {
+				loginPage.getEmailErrorMsg();}
+			
+			else if (driver.findElements(By.id(loginPage.passwordErrorAll)).size() != 0) {
+				loginPage.getPasswordErrorMsg();}
 			
 			//loading the webpage for reseting the text field
-			driver.get("http://localhost:3000/login");
+			driver.get(readconfig.getLoginURL());
 			
 			//checking whether the variable is empty or not
 			if(email_errorMsg.length() !=0 || password_errorMsg.length() != 0) {
@@ -55,15 +68,17 @@ public class TC_Login_Retest extends BaseClass {
 			else { sheet.getRow(i).getCell(3).setCellValue("Success"); }
 		
 		}
-		FileOutputStream fos = new FileOutputStream(file);
+		
 		//saving the updated file
+		FileOutputStream fos=setFileOutput(readconfig.getLoginDataExcel());
 		book.write(fos);
 		
 		//closing the Excel file
 		fos.close();
 		fis.close();
 	  }
-
-	}
 	
-}
+	catch (Exception e) {
+		System.out.println("Error Message"+e.getMessage());
+	}	
+}}

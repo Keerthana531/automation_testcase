@@ -1,6 +1,8 @@
 package com.yoloj.TestCases;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -75,6 +77,33 @@ ReadConfig readconfig=new ReadConfig();
 		File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot taken");
+	}
+	
+	public FileInputStream setFileInput(String path) {
+		FileInputStream fis=null;
+		try {
+			File file = new File(path);
+			fis=new FileInputStream(file);
+			System.out.println("inside FIS");
+			return fis;
+		}
+		catch(Exception e) {
+			System.out.println("Error Message"+e.getMessage());
+		}
+		return fis;
+	}
+	
+	public FileOutputStream setFileOutput(String path) {
+		FileOutputStream fos=null;
+		try {
+			File file = new File(path);
+			fos=new FileOutputStream(file);
+			return fos;
+		}
+		catch(Exception e) {
+			System.out.println("Error Message"+e.getMessage());
+		}
+		return fos;
 	}
 
 }

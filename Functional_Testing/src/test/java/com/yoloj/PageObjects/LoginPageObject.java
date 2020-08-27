@@ -2,6 +2,7 @@ package com.yoloj.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -47,8 +48,12 @@ public class LoginPageObject {
 	@FindBy(id="email-helper-text")
 	WebElement emailErrorMsg;
 	
+	public String emailErrorAll = "email-helper-text";
+	
 	@FindBy(id="password-helper-text")
 	WebElement passwordErrorMsg;
+	
+	public String passwordErrorAll = "password-helper-text";
 	
 	@FindBy(xpath="/div/div/div[1]")
 	WebElement errorMsgForLogin;
@@ -104,5 +109,7 @@ public class LoginPageObject {
 	public String getErrorMsg() {
 		return errorMsgForLogin.getText();
 	}
+	
+	
 }
 	

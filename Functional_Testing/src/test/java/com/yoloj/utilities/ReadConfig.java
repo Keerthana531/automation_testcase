@@ -29,7 +29,7 @@ Properties pro;
 	
 	public String getLoginURL()
 	{
-		String url=pro.getProperty("URL");
+		String url=pro.getProperty("loginURL");
 		return url;
 	}
 	
