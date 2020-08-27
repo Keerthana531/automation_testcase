@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57171" started-at="2020-08-27T02:46:55Z" finished-at="2020-08-27T02:47:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57171" started-at="2020-08-27T02:46:55Z" finished-at="2020-08-27T02:47:52Z">
+      <class name="com.yoloj.TestCases.TC_UserRegister_Retest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@2c8d66b2]" name="setup" is-config="true" duration-ms="14695" started-at="2020-08-27T08:16:55Z" finished-at="2020-08-27T08:17:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="userRegister()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@2c8d66b2]" name="userRegister" duration-ms="41392" started-at="2020-08-27T08:17:10Z" finished-at="2020-08-27T08:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegister -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="1028" started-at="2020-08-27T08:17:51Z" finished-at="2020-08-27T08:17:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.yoloj.TestCases.TC_UserRegister_Retest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
