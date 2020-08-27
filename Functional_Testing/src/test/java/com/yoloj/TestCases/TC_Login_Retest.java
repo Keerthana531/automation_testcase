@@ -19,6 +19,7 @@ public class TC_Login_Retest extends BaseClass {
 			
 		//loading the login Webpage
 		driver.get(readconfig.getLoginURL());
+		logger.info("URL is Opened");
 		
 		//get instance of LoginPageObjectModel
 		LoginPageObject loginPage = new LoginPageObject(driver);
@@ -28,6 +29,7 @@ public class TC_Login_Retest extends BaseClass {
 		
 		//Workbook
 		XSSFWorkbook book=new XSSFWorkbook(fis);
+		logger.info("opening of the excel");
 		
 		//sheet
 		XSSFSheet sheet=book.getSheetAt(0);
@@ -36,6 +38,7 @@ public class TC_Login_Retest extends BaseClass {
 		int total=sheet.getLastRowNum() - sheet.getFirstRowNum();
 		
 		//looping through the cells to get the data
+		logger.info("Using loop to get the data from cells");
 		for(int i=1 ; i<=total ;i++) {
 			//variable initialization
 			String email=""; String password="";
@@ -46,14 +49,16 @@ public class TC_Login_Retest extends BaseClass {
 			password = sheet.getRow(i).getCell(1).getStringCellValue();
 			
 			//passing the data 
+			logger.info("User added the value for email");
 			loginPage.setEmail(email);
+			logger.info("User added the value for password");
 			loginPage.setPassword(password);
+			logger.info("User Clicked the Login Button");
 			loginPage.clickButton();
 			
 			Thread.sleep(1000);
 			if(driver.findElements(By.xpath(loginPage.errorMsgForlogin)).size() != 0) {
 				finalerror = loginPage.getErrorMsg();
-				System.out.println(finalerror);
 			}
 			
 			//Checking whether the element is Displayed or not
@@ -64,7 +69,7 @@ public class TC_Login_Retest extends BaseClass {
 				password_errorMsg = loginPage.getPasswordErrorMsg();}
 			
 			
-			
+			logger.info("checking the format");
 			//checking whether the variable is empty or not
 			if(email_errorMsg.length() !=0 || password_errorMsg.length() != 0){
 					sheet.getRow(i).getCell(3).setCellValue(email_errorMsg+" "+password_errorMsg);
@@ -78,16 +83,18 @@ public class TC_Login_Retest extends BaseClass {
 			
 			//loading the webpage for reseting the text field
 			driver.get(readconfig.getLoginURL());
+			logger.info("Reloading the webpage");
 		
 		}
 		
 		//saving the updated file
 		FileOutputStream fos=setFileOutput(readconfig.getLoginDataExcel());
 		book.write(fos);
-		
+		logger.info("Saving the overwrited file");
 		//closing the Excel file
 		fos.close();
 		fis.close();
+		logger.info("Closing the Workbook/Excel");
 	  }
 	
 	catch (Exception e) {
