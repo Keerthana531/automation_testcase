@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="75478" started-at="2020-08-27T03:21:20Z" finished-at="2020-08-27T03:22:35Z">
+  <suite name="Suite" duration-ms="49971" started-at="2020-08-27T06:18:53Z" finished-at="2020-08-27T06:19:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="75478" started-at="2020-08-27T03:21:20Z" finished-at="2020-08-27T03:22:35Z">
+    <test name="Test" duration-ms="49971" started-at="2020-08-27T06:18:53Z" finished-at="2020-08-27T06:19:43Z">
       <class name="com.yoloj.TestCases.TC_UserRegister_Retest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@2c8d66b2]" name="setup" is-config="true" duration-ms="16470" started-at="2020-08-27T08:51:20Z" finished-at="2020-08-27T08:51:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@4c203ea1]" name="setup" is-config="true" duration-ms="13120" started-at="2020-08-27T11:48:54Z" finished-at="2020-08-27T11:49:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="userRegister()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@2c8d66b2]" name="userRegister" duration-ms="57869" started-at="2020-08-27T08:51:36Z" finished-at="2020-08-27T08:52:34Z">
+        <test-method status="PASS" signature="userRegister()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@4c203ea1]" name="userRegister" duration-ms="34841" started-at="2020-08-27T11:49:07Z" finished-at="2020-08-27T11:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegister -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="1085" started-at="2020-08-27T08:52:34Z" finished-at="2020-08-27T08:52:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@4c203ea1]" name="tearDown" is-config="true" duration-ms="864" started-at="2020-08-27T11:49:42Z" finished-at="2020-08-27T11:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

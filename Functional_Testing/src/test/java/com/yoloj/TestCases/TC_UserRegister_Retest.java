@@ -23,7 +23,7 @@ public class TC_UserRegister_Retest extends BaseClass {
 		logger.info("User entered the name");
 		Thread.sleep(2000);
 		
-		up.setEmail("rohini123@gmail.com");
+		up.setEmail("rohin@gmail.com");
 		logger.info("User entered the mail");
 		Thread.sleep(2000);
 		
@@ -35,14 +35,19 @@ public class TC_UserRegister_Retest extends BaseClass {
 		logger.info("User confirmed the password");
 		Thread.sleep(2000);
 		
-		up.setPhone("9812435678");
+		up.setPhone("9835678456");
 		logger.info("User entered the number");
 		Thread.sleep(2000);
 		
-//		up.createAccount();
-//		logger.info("User clicked the create account");
-//		
-//		Thread.sleep(3000);
+		
+		
+		up.createAccount();
+		logger.info("User clicked the create account");
+		
+//		Thread.sleep(4000);
+		
+		String msg = up.getErrormsg();
+		System.out.println(msg);
 		
 //		up.gotoLogin();
 //		Thread.sleep(3000);

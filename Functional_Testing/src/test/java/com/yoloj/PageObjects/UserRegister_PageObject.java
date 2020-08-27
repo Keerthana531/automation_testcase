@@ -46,6 +46,9 @@ WebDriver ldriver;
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/header/div/img")
 	WebElement HomePageLink;
 	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div/div[1]")    
+	WebElement Errormsg;
+	
 	public void ClickRegisterbtn(){
 		RegLink.click();
 	}
@@ -82,5 +85,9 @@ WebDriver ldriver;
 		Loginbtn.click();
 	}
 	
+	public String getErrormsg(){
+		return Errormsg.getText();
+		
+	}
 
 }
