@@ -84,7 +84,6 @@ ReadConfig readconfig=new ReadConfig();
 		try {
 			File file = new File(path);
 			fis=new FileInputStream(file);
-			System.out.println("inside FIS");
 			return fis;
 		}
 		catch(Exception e) {

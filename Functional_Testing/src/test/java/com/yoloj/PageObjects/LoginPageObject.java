@@ -55,8 +55,10 @@ public class LoginPageObject {
 	
 	public String passwordErrorAll = "password-helper-text";
 	
-	@FindBy(xpath="/div/div/div[1]")
+	@FindBy(xpath="//*[@id='root']/div/div/div/div[2]/div/div[1]")
 	WebElement errorMsgForLogin;
+	
+	public String errorMsgForlogin = "//*[@id='root']/div/div/div/div[2]/div/div[1]"; 
 	
 	public void setEmail(String Email) {
 		email.sendKeys(Email);
