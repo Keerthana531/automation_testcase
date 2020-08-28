@@ -69,4 +69,8 @@ Properties pro;
 	return loginData;
 	}
 
+	public String getProviderLoginURL() {
+		String providerLoginUrl = pro.getProperty("providerLoginURL");
+		return providerLoginUrl;
+	}
 }
