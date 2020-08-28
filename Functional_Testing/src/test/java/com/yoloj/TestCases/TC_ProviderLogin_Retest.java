@@ -13,11 +13,12 @@ import com.yoloj.PageObjects.LoginPageObject;
 public class TC_ProviderLogin_Retest extends BaseClass {
 
 
+	@SuppressWarnings("resource")
 	@Test
 	public void loginTestCase() {
 		try {
 			
-		//loading the login Webpage
+		//loading the login WebPage
 		driver.get(readconfig.getProviderLoginURL());
 		logger.info("URL is Opened");
 		

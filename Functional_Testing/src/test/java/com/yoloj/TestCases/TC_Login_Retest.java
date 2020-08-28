@@ -1,6 +1,5 @@
 package com.yoloj.TestCases;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -13,11 +12,12 @@ import com.yoloj.PageObjects.LoginPageObject;
 
 public class TC_Login_Retest extends BaseClass {
   
+	@SuppressWarnings("resource")
 	@Test
 	public void loginTestCase() {
 		try {
 			
-		//loading the login Webpage
+		//loading the login WebPage
 		driver.get(readconfig.getLoginURL());
 		logger.info("URL is Opened");
 		
@@ -44,7 +44,7 @@ public class TC_Login_Retest extends BaseClass {
 			String email=""; String password="";
 			String email_errorMsg = ""; String password_errorMsg=""; String finalerror = "";
 			
-			//getting and asssigning the data
+			//getting and assigning the data
 			email = sheet.getRow(i).getCell(0).getStringCellValue();
 			password = sheet.getRow(i).getCell(1).getStringCellValue();
 			
@@ -81,7 +81,7 @@ public class TC_Login_Retest extends BaseClass {
 				sheet.getRow(i).getCell(3).setCellValue("Success");
 			}
 			
-			//loading the webpage for reseting the text field
+			//loading the webPage for reseting the text field
 			driver.get(readconfig.getLoginURL());
 			logger.info("Reloading the webpage");
 		
