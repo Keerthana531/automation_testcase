@@ -29,6 +29,7 @@ ReadConfig readconfig=new ReadConfig();
 	public String baseURL=readconfig.getApplicationURL();
 	public String username=readconfig.getUsername();
 	public String password=readconfig.getPassword();
+	public String userRegisterPath =readconfig.getUserRegisterData();
 	public static WebDriver driver;
 	public UserRegister_PageObject up;
 	

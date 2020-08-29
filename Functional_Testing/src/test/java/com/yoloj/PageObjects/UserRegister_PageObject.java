@@ -16,7 +16,7 @@ WebDriver ldriver;
 		
 	}
 	
-	@FindBy(xpath="//*[@id=\"root\"]/div/div/div/header/div/div[2]/ul/li[3]/button/span[1]" )
+	@FindBy(xpath="//*[@id=\"root\"]/div/div/div/div[1]/header/div/div[2]/ul/li[3]/button/span[1]" )
 	WebElement RegLink;
 	
 	@FindBy(id = "name")
@@ -37,17 +37,39 @@ WebDriver ldriver;
 	@FindBy(id = "phone_number")
 	WebElement txtPhone;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div/div/div/div/div[2]/form/button/span[1]")
-	WebElement Createbtn;
-	
+	@FindBy(xpath = "//button[contains(@class,'MuiButtonBase-root MuiButton-root')][@type='submit']")
+	WebElement Createbtn;               //*[@id="root"]/div/div/div/div[2]/div/div/div/div[2]/form/button/span[1]
+	                                    //*[@id="root"]/div/div/div/div[2]/div/div/div/div[2]/form/button/span[1]
 	@FindBy(linkText = "Link")
 	WebElement Loginbtn;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/header/div/img")
-	WebElement HomePageLink;
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[1]/header/div/img")   //*[@id="root"]/div/div/div/div[1]/header/div/img
+	WebElement HomePageLink;                                                  //*[@id="root"]/div/div/div/div[1]/header/div/img
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div/div[1]")    
+//	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div/div[1]")    
+//	WebElement Errormsg;
+	
+	@FindBy(className = "MuiSnackbarContent-message")    //*[@id="root"]/div/div/div/div[3]/div/div[1]
 	WebElement Errormsg;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[3]/div/div[1]")
+	WebElement ExistErrormsg;
+	
+	@FindBy(id = "name-helper-text")
+	WebElement NameError;
+	
+	@FindBy(id = "email-helper-text")
+	WebElement EmailError;
+	
+	@FindBy(id = "password-helper-text")
+	WebElement PasswordError;
+	
+	@FindBy(id = "confirm_password-helper-text")
+	WebElement ConfirmPasswordError;
+	
+	@FindBy(id = "phone_number-helper-text")
+	WebElement PhoneError;
+	
 	
 	public void ClickRegisterbtn(){
 		RegLink.click();
@@ -86,8 +108,41 @@ WebDriver ldriver;
 	}
 	
 	public String getErrormsg(){
-		return Errormsg.getText();
+		String msg = Errormsg.getText();
+		return msg;
 		
+	}
+	
+	public String getExistmsg(){
+		String msg = ExistErrormsg.getText();
+		return msg;
+	}
+	
+	public String getNameError(){
+		
+		String msg = NameError.getText();
+		return msg;
+	}
+	
+	public String getEmailError(){
+		String msg = EmailError.getText();
+		return msg;
+	}
+	
+	public String getPasswordError(){
+		String msg = PasswordError.getText();
+		return msg;
+	}
+	
+	public String getConfirmPassError(){
+		String msg = ConfirmPasswordError.getText();
+		
+		return msg;
+	}
+	
+	public String getPhoneError(){
+		String msg = PhoneError.getText();
+		return msg;
 	}
 
 }
