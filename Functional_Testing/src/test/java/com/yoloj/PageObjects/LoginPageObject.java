@@ -21,11 +21,9 @@ public class LoginPageObject {
 	@FindBy(id="password")
 	WebElement password;
 	
-	@FindBy(xpath="//*[@id=\"root\"]/div/div/div/div/div/div/div/div[2]/form/button/span[1]")
+	@FindBy(xpath="//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div[1]/div/form/button/span[1]")
 	WebElement loginButton;
 	
-	@FindBy(className="MuiTypography-root")
-	WebElement signUplnk;
 	
 	@FindBy(tagName="img")
 	WebElement homePagelnk;
@@ -55,10 +53,14 @@ public class LoginPageObject {
 	
 	public String passwordErrorAll = "password-helper-text";
 	
-	@FindBy(xpath="//*[@id='root']/div/div/div/div[2]/div/div[1]")
+	@FindBy(xpath="//*[@id=\"root\"]/div/div/div/div[3]/div/div[1]")
 	WebElement errorMsgForLogin;
 	
-	public String errorMsgForlogin = "//*[@id='root']/div/div/div/div[2]/div/div[1]"; 
+	//public String errorMsgForlogin = "//*[@id='root']/div/div/div/div[2]/div/div[1]";
+	public String errorMsgForlogin = "//*[@id=\"root\"]/div/div/div/div[3]/div/div[1]";
+	
+	@FindBy(xpath="//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div[2]/a")
+	WebElement signup;
 	
 	public void setEmail(String Email) {
 		email.sendKeys(Email);
@@ -70,10 +72,6 @@ public class LoginPageObject {
 	
 	public void clickButton() {
 		loginButton.click();
-	}
-
-	public void clickSignUp() {
-		signUplnk.click();
 	}
 	
 	public void clickHomePage() {
@@ -112,6 +110,9 @@ public class LoginPageObject {
 		return errorMsgForLogin.getText();
 	}
 	
+	public void clickSignup() {
+		signup.click();
+	}
 	
 }
 	

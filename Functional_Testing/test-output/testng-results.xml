@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="986940" started-at="2020-08-31T04:42:46Z" finished-at="2020-08-31T04:59:13Z">
+  <suite name="Default suite" duration-ms="369628" started-at="2020-08-31T12:49:36 IST" finished-at="2020-08-31T12:55:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="986940" started-at="2020-08-31T04:42:46Z" finished-at="2020-08-31T04:59:13Z">
-      <class name="com.yoloj.TestCases.TC_UserRegister_Retest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@1b0375b3]" name="setup" is-config="true" duration-ms="13478" started-at="2020-08-31T10:12:46Z" finished-at="2020-08-31T10:13:00Z">
+    <test name="Default test" duration-ms="369628" started-at="2020-08-31T12:49:36 IST" finished-at="2020-08-31T12:55:45 IST">
+      <class name="com.yoloj.TestCases.TC_Login_Retest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="setup" is-config="true" duration-ms="16307" started-at="2020-08-31T12:49:36 IST" finished-at="2020-08-31T12:49:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="userRegister()[pri:0, instance:com.yoloj.TestCases.TC_UserRegister_Retest@1b0375b3]" name="userRegister" duration-ms="973412" started-at="2020-08-31T10:13:00Z" finished-at="2020-08-31T10:29:13Z">
+        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="loginTestCase" duration-ms="351980" started-at="2020-08-31T12:49:52 IST" finished-at="2020-08-31T12:55:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userRegister -->
-      </class> <!-- com.yoloj.TestCases.TC_UserRegister_Retest -->
+        </test-method> <!-- loginTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="tearDown" is-config="true" duration-ms="1182" started-at="2020-08-31T12:55:44 IST" finished-at="2020-08-31T12:55:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.yoloj.TestCases.TC_Login_Retest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
