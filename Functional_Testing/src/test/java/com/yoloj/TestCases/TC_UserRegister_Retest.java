@@ -29,10 +29,10 @@ public class TC_UserRegister_Retest extends BaseClass {
 		Thread.sleep(2000);
 		
 		//String path = System.getProperty("user.dir")+"/src/test/java/com/yoloj/testData/User_Register_Test_Data.xlsx";
-		//String path = "C:\\Users\\hp\\Desktop\\User_Register_Test_Data.xlsx";
+		String path = "C:\\Users\\hp\\Desktop\\User_Register_Test_Data.xlsx";
 		
 		// getting the path from base class
-		FileInputStream fis = new FileInputStream(userRegisterPath);
+		FileInputStream fis = new FileInputStream(path);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheet("Sheet1");
 		
@@ -139,13 +139,9 @@ public class TC_UserRegister_Retest extends BaseClass {
 			msg = up.getExistmsg();
 			System.out.println(msg);
 		}
-
-		         
-		up.gotoHome();
-		logger.info("User is on the home page");
-		Thread.sleep(2000);
 		
 		
+		driver.navigate().refresh();
 		
 		if((name_errormsg.length()!=0)|| (mail_errormsg.length()!=0)||(pass_errormsg.length()!=0)||(confirmpass_errormsg.length()!=0)||(phone_errormsg.length()!=0)||(msg.length()!=0)){
 			sheet.getRow(i).createCell(6).setCellValue(name_errormsg+" "+mail_errormsg+" "+pass_errormsg+" "+confirmpass_errormsg+" "+phone_errormsg+" "+msg);
@@ -164,7 +160,7 @@ public class TC_UserRegister_Retest extends BaseClass {
 	
 	}
 		
-		FileOutputStream fos = new FileOutputStream(userRegisterPath);
+		FileOutputStream fos = new FileOutputStream(path);
 		wb.write(fos);
 		wb.close();
 	
@@ -246,6 +242,19 @@ public class TC_UserRegister_Retest extends BaseClass {
 //	}
 //}
 //return logindata;
+
+//if(driver.getPageSource().contentEquals("Error")){
+//	captureScreen(driver, "TC_UserRegister_Retest");
+//	Thread.sleep(2000);
+//	driver.navigate().refresh();
+//
+//}
+//else if(up.homeLink().isDisplayed()){
+//		up.gotoHome();
+//		logger.info("User is on the home page");
+//		Thread.sleep(2000);
+//}
+
 
 
 

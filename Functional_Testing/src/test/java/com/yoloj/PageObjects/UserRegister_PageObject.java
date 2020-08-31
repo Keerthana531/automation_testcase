@@ -99,6 +99,9 @@ WebDriver ldriver;
 		Createbtn.click();
 	}
 	
+	public WebElement homeLink(){
+		return HomePageLink;
+	}
 	public void gotoHome(){
 		HomePageLink.click();
 	}
