@@ -78,7 +78,7 @@ public class TC_Login_Retest extends BaseClass {
 			}			
 			else if(finalerror.length() != 0 ){ 
 				sheet.getRow(i).getCell(3).setCellValue(finalerror); 
-				System.out.println(finalerror);
+				
 			}
 			else{
 				sheet.getRow(i).getCell(3).setCellValue("Success");
