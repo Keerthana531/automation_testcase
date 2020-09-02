@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.yoloj.TestCases.ProviderRegister">
+      <class name="com.yoloj.TestCases.TC_Login_Retest">
         <methods>
+          <include name="loginTestCase"/>
           <include name="setup"/>
-          <include name="providerRegister"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.yoloj.TestCases.ProviderRegister -->
+      </class> <!-- com.yoloj.TestCases.TC_Login_Retest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

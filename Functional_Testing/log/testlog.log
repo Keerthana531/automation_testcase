@@ -1390,3 +1390,108 @@
 2020-08-31 12:55:34,086 - yoloj -INFO - Saving the overwrited file
 2020-08-31 12:55:34,087 - yoloj -INFO - Closing the Workbook/Excel
 2020-08-31 12:55:34,088 - yoloj -INFO - User clicks the Signup link
+2020-09-02 13:58:36,295 - yoloj -INFO - URL is Opened
+2020-09-02 13:58:40,717 - yoloj -INFO - opening of the excel
+2020-09-02 13:58:40,718 - yoloj -INFO - Using loop to get the data from cells
+2020-09-02 13:58:40,748 - yoloj -INFO - User added the value for email
+2020-09-02 13:58:41,939 - yoloj -INFO - User added the value for password
+2020-09-02 13:58:42,698 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 13:58:44,005 - yoloj -INFO - Checking
+2020-09-02 13:58:54,280 - yoloj -INFO - checking the format
+2020-09-02 13:59:00,246 - yoloj -INFO - Reloading the webpage
+2020-09-02 13:59:00,247 - yoloj -INFO - User added the value for email
+2020-09-02 13:59:01,228 - yoloj -INFO - User added the value for password
+2020-09-02 13:59:01,983 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 13:59:03,248 - yoloj -INFO - Checking
+2020-09-02 13:59:33,431 - yoloj -INFO - checking the format
+2020-09-02 13:59:47,675 - yoloj -INFO - Reloading the webpage
+2020-09-02 13:59:47,677 - yoloj -INFO - User added the value for email
+2020-09-02 13:59:48,843 - yoloj -INFO - User added the value for password
+2020-09-02 13:59:49,377 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 13:59:50,725 - yoloj -INFO - Checking
+2020-09-02 13:59:50,915 - yoloj -INFO - checking the format
+2020-09-02 13:59:55,311 - yoloj -INFO - Reloading the webpage
+2020-09-02 13:59:55,312 - yoloj -INFO - User added the value for email
+2020-09-02 13:59:56,246 - yoloj -INFO - User added the value for password
+2020-09-02 13:59:56,835 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 13:59:58,068 - yoloj -INFO - Checking
+2020-09-02 14:00:08,263 - yoloj -INFO - checking the format
+2020-09-02 14:00:12,550 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:00:12,554 - yoloj -INFO - User added the value for email
+2020-09-02 14:00:13,521 - yoloj -INFO - User added the value for password
+2020-09-02 14:00:14,160 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:00:15,424 - yoloj -INFO - Checking
+2020-09-02 14:00:15,592 - yoloj -INFO - checking the format
+2020-09-02 14:00:19,712 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:00:19,714 - yoloj -INFO - User added the value for email
+2020-09-02 14:00:20,709 - yoloj -INFO - User added the value for password
+2020-09-02 14:00:21,263 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:00:22,502 - yoloj -INFO - Checking
+2020-09-02 14:00:22,654 - yoloj -INFO - checking the format
+2020-09-02 14:00:27,564 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:00:27,568 - yoloj -INFO - User added the value for email
+2020-09-02 14:00:28,962 - yoloj -INFO - User added the value for password
+2020-09-02 14:00:29,711 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:00:31,062 - yoloj -INFO - Checking
+2020-09-02 14:01:01,217 - yoloj -INFO - checking the format
+2020-09-02 14:01:18,358 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:01:18,360 - yoloj -INFO - User added the value for email
+2020-09-02 14:01:19,890 - yoloj -INFO - User added the value for password
+2020-09-02 14:01:20,794 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:01:22,160 - yoloj -INFO - Checking
+2020-09-02 14:01:52,316 - yoloj -INFO - checking the format
+2020-09-02 14:02:05,974 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:02:05,975 - yoloj -INFO - User added the value for email
+2020-09-02 14:02:06,209 - yoloj -INFO - User added the value for password
+2020-09-02 14:02:06,968 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:02:08,235 - yoloj -INFO - Checking
+2020-09-02 14:02:28,383 - yoloj -INFO - checking the format
+2020-09-02 14:02:33,980 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:02:33,983 - yoloj -INFO - User added the value for email
+2020-09-02 14:02:35,245 - yoloj -INFO - User added the value for password
+2020-09-02 14:02:35,387 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:02:36,729 - yoloj -INFO - Checking
+2020-09-02 14:02:56,896 - yoloj -INFO - checking the format
+2020-09-02 14:03:01,205 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:03:01,207 - yoloj -INFO - User added the value for email
+2020-09-02 14:03:01,416 - yoloj -INFO - User added the value for password
+2020-09-02 14:03:01,657 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:03:03,013 - yoloj -INFO - Checking
+2020-09-02 14:03:23,164 - yoloj -INFO - checking the format
+2020-09-02 14:03:26,977 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:03:26,978 - yoloj -INFO - User added the value for email
+2020-09-02 14:03:28,346 - yoloj -INFO - User added the value for password
+2020-09-02 14:03:28,895 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:03:30,195 - yoloj -INFO - Checking
+2020-09-02 14:04:00,356 - yoloj -INFO - checking the format
+2020-09-02 14:04:13,751 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:04:13,753 - yoloj -INFO - User added the value for email
+2020-09-02 14:04:14,742 - yoloj -INFO - User added the value for password
+2020-09-02 14:04:15,467 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:04:16,737 - yoloj -INFO - Checking
+2020-09-02 14:04:46,874 - yoloj -INFO - checking the format
+2020-09-02 14:05:03,955 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:05:03,956 - yoloj -INFO - User added the value for email
+2020-09-02 14:05:05,523 - yoloj -INFO - User added the value for password
+2020-09-02 14:05:06,437 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:05:07,759 - yoloj -INFO - Checking
+2020-09-02 14:05:37,879 - yoloj -INFO - checking the format
+2020-09-02 14:05:50,007 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:05:50,011 - yoloj -INFO - User added the value for email
+2020-09-02 14:05:50,817 - yoloj -INFO - User added the value for password
+2020-09-02 14:05:51,409 - yoloj -INFO - User Clicked the Login Button
+2020-09-02 14:05:52,685 - yoloj -INFO - Checking
+2020-09-02 14:06:02,813 - yoloj -INFO - checking the format
+2020-09-02 14:06:15,652 - yoloj -INFO - Reloading the webpage
+2020-09-02 14:06:16,393 - yoloj -INFO - Saving the overwrited file
+2020-09-02 14:06:16,395 - yoloj -INFO - Closing the Workbook/Excel
+2020-09-02 14:06:16,395 - yoloj -INFO - User clicks the Signup link
+2020-09-02 14:13:15,225 - yoloj -INFO - URL is Opened
+2020-09-02 14:13:15,552 - yoloj -INFO - Using loop to get the data from cells
+2020-09-02 14:13:15,555 - yoloj -INFO - User clicks the Signup link
+2020-09-02 14:14:32,773 - yoloj -INFO - URL is Opened
+2020-09-02 14:14:33,241 - yoloj -INFO - Using loop to get the data from cells
+2020-09-02 14:14:33,242 - yoloj -INFO - User clicks the Signup link
+2020-09-02 14:16:06,519 - yoloj -INFO - URL is Opened
+2020-09-02 14:16:07,158 - yoloj -INFO - Using loop to get the data from cells
+2020-09-02 14:16:07,162 - yoloj -INFO - User clicks the Signup link
