@@ -98,13 +98,11 @@ public class TC_Login_Retest extends BaseClass {
 		fos.close();
 		fis.close();
 		logger.info("Closing the Workbook/Excel");
-		
+
 		logger.info("User clicks the Signup link");
 		loginPage.clickSignup();
-		
-		if (driver.findElements(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div/div/div/div[1]/div/span")).size() == 0) {
-			Assert.assertTrue(false);
-		}
+				
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div[1]/span")).getText(),"Create your free account here");
 		
 	  }
 	
