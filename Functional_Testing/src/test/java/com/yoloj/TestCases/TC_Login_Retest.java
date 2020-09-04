@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.yoloj.PageObjects.LoginPageObject;
@@ -57,6 +58,7 @@ public class TC_Login_Retest extends BaseClass {
 			loginPage.clickButton();
 			
 			Thread.sleep(1000);
+			logger.info("Checking");
 			if(driver.findElements(By.xpath(loginPage.errorMsgForlogin)).size() != 0) {
 				finalerror = loginPage.getErrorMsg();
 			}
@@ -76,6 +78,7 @@ public class TC_Login_Retest extends BaseClass {
 			}			
 			else if(finalerror.length() != 0 ){ 
 				sheet.getRow(i).getCell(3).setCellValue(finalerror); 
+				
 			}
 			else{
 				sheet.getRow(i).getCell(3).setCellValue("Success");
@@ -95,6 +98,12 @@ public class TC_Login_Retest extends BaseClass {
 		fos.close();
 		fis.close();
 		logger.info("Closing the Workbook/Excel");
+
+		logger.info("User clicks the Signup link");
+		loginPage.clickSignup();
+				
+		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div[1]/span")).getText(),"Create your free account here");
+		
 	  }
 	
 	catch (Exception e) {

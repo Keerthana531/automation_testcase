@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -49,7 +51,11 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+<<<<<<< HEAD
                     <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse--572426725\testng-customsuite.xml</span>
+=======
+                    <span>C:\Users\Arun\AppData\Local\Temp\testng-eclipse-253428730\testng-customsuite.xml</span>
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,8 +107,13 @@
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
+<<<<<<< HEAD
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails" hash-for-method="ServideType">ServideType</a> <!-- method navigator-link -->
+=======
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.yoloj.TestCases.TC_Login_Retest" hash-for-method="loginTestCase">loginTestCase</a> <!-- method navigator-link -->
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -119,12 +130,18 @@
         <div panel-name="suite-Default_suite" class="panel Default_suite">
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="failed.png"/>
               <span class="class-name">com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails</span>
+=======
+              <img src="passed.png"/>
+              <span class="class-name">com.yoloj.TestCases.TC_Login_Retest</span>
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="ServideType">
                   </a> <!-- ServideType -->
                   <span class="method-name">ServideType</span>
@@ -178,6 +195,11 @@ Session ID: 73410d455287acb3a7df0ce61bf17a05
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 
 </div> <!-- stack-trace -->
+=======
+                  <a name="loginTestCase">
+                  </a> <!-- loginTestCase -->
+                  <span class="method-name">loginTestCase</span>
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +207,24 @@ Session ID: 73410d455287acb3a7df0ce61bf17a05
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
             <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse--572426725\testng-customsuite.xml</span>
+=======
+            <span class="header-content">C:\Users\Arun\AppData\Local\Temp\testng-eclipse-253428730\testng-customsuite.xml</span>
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
+<<<<<<< HEAD
       &lt;class name=&quot;com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails&quot;/&gt;
+=======
+      &lt;class name=&quot;com.yoloj.TestCases.TC_Login_Retest&quot;/&gt;
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -236,14 +266,24 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
+<<<<<<< HEAD
 data.setCell(0, 1, 'ServideType')
 data.setCell(0, 2, 'com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails')
 data.setCell(0, 3, 125315);
+=======
+data.setCell(0, 1, 'loginTestCase')
+data.setCell(0, 2, 'com.yoloj.TestCases.TC_Login_Retest')
+data.setCell(0, 3, 35511);
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 2 minutes</span>
+=======
+              <span class="suite-total-time">Total running time: 35 seconds</span>
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,24 +309,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+<<<<<<< HEAD
               <div class="chronological-class-name">com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails</div> <!-- chronological-class-name -->
+=======
+              <div class="chronological-class-name">com.yoloj.TestCases.TC_Login_Retest</div> <!-- chronological-class-name -->
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+<<<<<<< HEAD
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ServideType</span>
                 <span class="method-start">13423 ms</span>
+=======
+                <span class="method-name">loginTestCase</span>
+                <span class="method-start">16464 ms</span>
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
+<<<<<<< HEAD
                 <span class="method-start">138745 ms</span>
+=======
+                <span class="method-start">52011 ms</span>
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="1" passed="0">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="139748" started-at="2020-09-04T05:12:25Z" finished-at="2020-09-04T05:14:45Z">
+=======
+  <suite name="Default suite" duration-ms="53345" started-at="2020-09-02T14:15:16 IST" finished-at="2020-09-02T14:16:09 IST">
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="139748" started-at="2020-09-04T05:12:25Z" finished-at="2020-09-04T05:14:45Z">
       <class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails">
         <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails@7a79be86]" name="setup" is-config="true" duration-ms="13412" started-at="2020-09-04T10:42:25Z" finished-at="2020-09-04T10:42:39Z">
+=======
+    <test name="Default test" duration-ms="53345" started-at="2020-09-02T14:15:16 IST" finished-at="2020-09-02T14:16:09 IST">
+      <class name="com.yoloj.TestCases.TC_Login_Retest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="setup" is-config="true" duration-ms="16439" started-at="2020-09-02T14:15:16 IST" finished-at="2020-09-02T14:15:32 IST">
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="ServideType()[pri:0, instance:com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails@7a79be86]" name="ServideType" duration-ms="125315" started-at="2020-09-04T10:42:39Z" finished-at="2020-09-04T10:44:44Z">
           <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
@@ -76,14 +91,26 @@ Session ID: 73410d455287acb3a7df0ce61bf17a05
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+=======
+        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="loginTestCase" duration-ms="35511" started-at="2020-09-02T14:15:32 IST" finished-at="2020-09-02T14:16:08 IST">
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ServideType -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails@7a79be86]" name="tearDown" is-config="true" duration-ms="974" started-at="2020-09-04T10:44:44Z" finished-at="2020-09-04T10:44:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails -->
+=======
+        </test-method> <!-- loginTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.yoloj.TestCases.TC_Login_Retest@965684]" name="tearDown" is-config="true" duration-ms="1261" started-at="2020-09-02T14:16:08 IST" finished-at="2020-09-02T14:16:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.yoloj.TestCases.TC_Login_Retest -->
+>>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
