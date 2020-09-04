@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class UserRegister_PageObject {
 	
-WebDriver ldriver;
+	WebDriver ldriver;
 	
 	public UserRegister_PageObject(WebDriver rdriver){
 		
@@ -43,12 +43,12 @@ WebDriver ldriver;
 	@FindBy(linkText = "Link")
 	WebElement Loginbtn;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[1]/header/div/img")   //*[@id="root"]/div/div/div/div[1]/header/div/img
-	WebElement HomePageLink;                                                  //*[@id="root"]/div/div/div/div[1]/header/div/img
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[1]/header/div/img")  
+	WebElement HomePageLink;                                                  
 	
-//	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div/div[1]")    
+//	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div/div[1]")         
 //	WebElement Errormsg;
-	
+	//
 	@FindBy(className = "MuiSnackbarContent-message")    //*[@id="root"]/div/div/div/div[3]/div/div[1]
 	WebElement Errormsg;
 	
@@ -97,6 +97,10 @@ WebDriver ldriver;
 	
 	public void createAccount(){
 		Createbtn.click();
+	}
+	
+	public WebElement crtbutton(){
+		return Createbtn;
 	}
 	
 	public WebElement homeLink(){

@@ -19,6 +19,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.yoloj.PageObjects.ProviderRegister_PageObject;
 import com.yoloj.PageObjects.UserRegister_PageObject;
 import com.yoloj.utilities.ReadConfig;
 
@@ -32,6 +33,7 @@ ReadConfig readconfig=new ReadConfig();
 	public String userRegisterPath =readconfig.getUserRegisterData();
 	public static WebDriver driver;
 	public UserRegister_PageObject up;
+	public ProviderRegister_PageObject pr;
 	
 	public static Logger logger;
 	

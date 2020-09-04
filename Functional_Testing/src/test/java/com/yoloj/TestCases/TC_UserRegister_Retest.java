@@ -9,6 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.yoloj.PageObjects.UserRegister_PageObject;
@@ -28,137 +29,92 @@ public class TC_UserRegister_Retest extends BaseClass {
 		up = new UserRegister_PageObject(driver);
 		Thread.sleep(2000);
 		
-		//String path = System.getProperty("user.dir")+"/src/test/java/com/yoloj/testData/User_Register_Test_Data.xlsx";
-		String path = "C:\\Users\\hp\\Desktop\\User_Register_Test_Data.xlsx";
-		
 		// getting the path from base class
+		String path = "C:\\Users\\hp\\Desktop\\User_Register_Test_Data.xlsx";
 		FileInputStream fis = new FileInputStream(path);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheet("Sheet1");
 		
 		//getting the row count
-		
 		int size = sheet.getLastRowNum() -  sheet.getFirstRowNum();
 		System.out.println(size);
 		
 		//getting the data through looping
 		for(int i=1; i<=size; i++){
-			String name_errormsg="";
-			String mail_errormsg = "";
-			String pass_errormsg = "";
-			String confirmpass_errormsg = "";
-			String phone_errormsg = "";
+			
 			String msg = "";
-		String name = sheet.getRow(i).getCell(0).getStringCellValue();
-		String email = sheet.getRow(i).getCell(1).getStringCellValue();
-		String password = sheet.getRow(i).getCell(2).getStringCellValue();
-		String ConfirmPass = sheet.getRow(i).getCell(3).getStringCellValue();
-		String code = sheet.getRow(i).getCell(4).getStringCellValue();
-		String phone = sheet.getRow(i).getCell(5).getRawValue();
-		
-		System.out.println(name+" "+email+" "+password+" "+ConfirmPass+" "+code+" "+phone);
-		
-		//*[@id="root"]/div/div/div/div[1]/header/div/div[2]/ul/li[3]/button/span[1]
-		
-		Thread.sleep(5000);
-		up.ClickRegisterbtn();
-		logger.info("User clicked the Register button");
-		Thread.sleep(1000);
-		
-		
-		up.setName(name);
-		logger.info("User entered the name");
-		Thread.sleep(1000);
-		
-		if(driver.findElements(By.id("name-helper-text")).size()!=0){
-			name_errormsg = up.getNameError();
-			System.out.println(name_errormsg);
-		}
-		
-		up.setEmail(email);
-		logger.info("User entered the mail");
-		Thread.sleep(1000);
-		
-		if(driver.findElements(By.id("email-helper-text")).size()!=0){
-			mail_errormsg = up.getEmailError();
-			System.out.println(mail_errormsg);
-		}
-		
-		
-		up.setPassword(password);
-		logger.info("User entered the password");
-		Thread.sleep(1000);
-		
-		if(driver.findElements(By.id("password-helper-text")).size()!=0){
-			pass_errormsg = up.getPasswordError();
-			System.out.println(pass_errormsg);
+			String name = sheet.getRow(i).getCell(0).getStringCellValue();
+			String email = sheet.getRow(i).getCell(1).getStringCellValue();
+			String password = sheet.getRow(i).getCell(2).getStringCellValue();
+			String ConfirmPass = sheet.getRow(i).getCell(3).getStringCellValue();
+			String code = sheet.getRow(i).getCell(4).getStringCellValue();
+			String phone = sheet.getRow(i).getCell(5).getRawValue();
 			
-		}
-		
-		
-		up.setConfirmPassword(ConfirmPass);
-		logger.info("User confirmed the password");
-		Thread.sleep(1000);
-		
-		if(driver.findElements(By.id("confirm_password-helper-text")).size()!=0){
-			confirmpass_errormsg = up.getConfirmPassError();
-			System.out.println(confirmpass_errormsg);
+			System.out.println(name+" "+email+" "+password+" "+ConfirmPass+" "+code+" "+phone);
+			// user clicking the register button
+			Thread.sleep(2000);
+			up.ClickRegisterbtn();
+			logger.info("User clicked the Register button");
+			Thread.sleep(1000);
+			//user setting the name
+			up.setName(name);
+			logger.info("User entered the name");
+			Thread.sleep(1000);
+			//user setting the mail
+			up.setEmail(email);
+			logger.info("User entered the mail");
+			Thread.sleep(1000);
+			//user setting the password
+			up.setPassword(password);
+			logger.info("User entered the password");
+			Thread.sleep(1000);
+			//user setting the confirm password
+			up.setConfirmPassword(ConfirmPass);
+			logger.info("User confirmed the password");
+			Thread.sleep(1000);
+			//user selecting the code from drop down
+			driver.findElement(By.id("demo-simple-select")).click();
+			Thread.sleep(1000);
+			List<WebElement> list = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')]/li"));
+			//System.out.println(list.size());
 			
-		}	
-		
-		driver.findElement(By.id("demo-simple-select")).click();
-		Thread.sleep(1000);
-		List<WebElement> list = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')]/li"));
-		//System.out.println(list.size());
-		
-		for(int j=0; j<list.size(); j++){
-			if(list.get(j).getText().equals(code)){
-				System.out.println(list.get(j).getText());
-				list.get(j).click();
-				break;
-				
+			for(int j=0; j<list.size(); j++){
+				if(list.get(j).getText().equals(code)){
+					System.out.println(list.get(j).getText());
+					list.get(j).click();
+					break;
+					
+				}
 			}
-		}
-		logger.info("user selected the code");
-		
-		up.setPhone(phone);
-		logger.info("User entered the number");
-		Thread.sleep(1000);
-		
-		if(driver.findElements(By.id("phone_number-helper-text")).size()!=0){
-			phone_errormsg = up.getPhoneError();
-			System.out.println(phone_errormsg);
-		}
-		
-		Thread.sleep(3000);
-		up.createAccount();
-		logger.info("User clicked the create account");	
-		
-		Thread.sleep(2000);
-		if(driver.findElements(By.xpath("//*[@id=\"root\"]/div/div/div/div[3]/div/div[1]")).size()!=0){
-			msg = up.getExistmsg();
-			System.out.println(msg);
-		}
-		
-		
-		driver.navigate().refresh();
-		
-		if((name_errormsg.length()!=0)|| (mail_errormsg.length()!=0)||(pass_errormsg.length()!=0)||(confirmpass_errormsg.length()!=0)||(phone_errormsg.length()!=0)||(msg.length()!=0)){
-			sheet.getRow(i).createCell(6).setCellValue(name_errormsg+" "+mail_errormsg+" "+pass_errormsg+" "+confirmpass_errormsg+" "+phone_errormsg+" "+msg);
-			sheet.getRow(i).createCell(7).setCellValue("Fail");
+			logger.info("user selected the code");
+			//user setting the phone number
+			up.setPhone(phone);
+			logger.info("User entered the number");
+			Thread.sleep(1000);
+			//user selecting the create account
+			Actions action = new Actions(driver);
+			action.moveToElement(up.crtbutton()).click().perform();
+//			up.createAccount();
+			logger.info("User clicked the create account");	
+			Thread.sleep(1000);
+			//user capturing the error message
+			if(driver.findElements(By.className("MuiSnackbarContent-message")).size()!=0){
+				msg = up.getExistmsg();
+				System.out.println(msg);
+			}
+			//user navigating to home page
+			up.gotoHome();
+			logger.info("User is on the home page");
+			Thread.sleep(2000);
 			
-		}
-		else if(msg.length()!=0){
-			sheet.getRow(i).createCell(7).setCellValue(msg);
-			sheet.getRow(i).createCell(8).setCellValue("Fail");
-		}
-		else{
-			sheet.getRow(i).createCell(8).setCellValue("Success");
-		}
+			if(msg.length()!=0){
+				sheet.getRow(i).createCell(6).setCellValue(msg);	
+			}
+			else{
+				sheet.getRow(i).createCell(6).setCellValue("Success");
+			}
 		
-		
-	
-	}
+		}
 		
 		FileOutputStream fos = new FileOutputStream(path);
 		wb.write(fos);
@@ -168,19 +124,19 @@ public class TC_UserRegister_Retest extends BaseClass {
 	catch(Exception e){
 		System.out.println("Error Message"+e.getMessage());
 	}
-}
+	}
 }
 
 		
 	
+/*
 
-
-//String name_errormsg="";
-//String mail_errormsg = "";
-//String pass_errormsg = "";
-//String confirmpass_errormsg = "";
-//String phone_errormsg = "";
-//		Thread.sleep(4000);
+String name_errormsg="";
+String mail_errormsg = "";
+String pass_errormsg = "";
+String confirmpass_errormsg = "";
+String phone_errormsg = "";
+		Thread.sleep(4000);
 		
 //		String msg = up.getErrormsg();
 //		System.out.println(msg);
@@ -197,11 +153,6 @@ public class TC_UserRegister_Retest extends BaseClass {
 //		confirmpass_errormsg = up.getConfirmPassError();
 //		
 //		phone_errormsg = up.getPhoneError();
-		
-				
-		
-
-
 
 //WebElement countrycode = driver.findElement(By.id("demo-simple-select"));
 //Select s1 = new Select(countrycode);
@@ -255,6 +206,26 @@ public class TC_UserRegister_Retest extends BaseClass {
 //		Thread.sleep(2000);
 //}
 
-
-
-
+if(driver.findElements(By.id("name-helper-text")).size()!=0){
+	name_errormsg = up.getNameError();
+	System.out.println(name_errormsg);
+}
+if(driver.findElements(By.id("email-helper-text")).size()!=0){
+	mail_errormsg = up.getEmailError();
+	System.out.println(mail_errormsg);
+}
+if(driver.findElements(By.id("password-helper-text")).size()!=0){
+	pass_errormsg = up.getPasswordError();
+	System.out.println(pass_errormsg);
+	
+}
+if(driver.findElements(By.id("confirm_password-helper-text")).size()!=0){
+	confirmpass_errormsg = up.getConfirmPassError();
+	System.out.println(confirmpass_errormsg);
+	
+}
+if(driver.findElements(By.id("phone_number-helper-text")).size()!=0){
+	phone_errormsg = up.getPhoneError();
+	System.out.println(phone_errormsg);
+}
+*/
