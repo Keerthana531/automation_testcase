@@ -1,5 +1,11 @@
 package com.yoloj.TestCases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.ClipboardOwner;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -20,7 +26,7 @@ import com.yoloj.PageObjects.ProviderRegister_PageObject;
 public class TC_ProviderRegister_OrgDetails extends BaseClass{
 	
 	@Test
-	public void OrgDetails() throws InterruptedException, IOException{
+	public void OrgDetails() throws InterruptedException, IOException, AWTException{
 		
 		driver.get(baseURL);
 		logger.info("URL is opened");
@@ -42,25 +48,26 @@ public class TC_ProviderRegister_OrgDetails extends BaseClass{
 			
 			DataFormatter formatter = new DataFormatter();
 			
-			String fname = formatter.formatCellValue(sheet.getRow(j).getCell(0));
-			String lname = formatter.formatCellValue(sheet.getRow(j).getCell(1));
-			String mail =formatter.formatCellValue( sheet.getRow(j).getCell(2));
-			String pass = formatter.formatCellValue(sheet.getRow(j).getCell(3));
-			String cpass = formatter.formatCellValue(sheet.getRow(j).getCell(4));
-			String code =formatter.formatCellValue( sheet.getRow(j).getCell(5));
-			String phone = formatter.formatCellValue(sheet.getRow(j).getCell(6));
-			String orgname = formatter.formatCellValue(sheet.getRow(j).getCell(7));
-			String orgaddress = formatter.formatCellValue( sheet.getRow(j).getCell(8));
-			String fee = formatter.formatCellValue(sheet.getRow(j).getCell(9));
-			String pincode = formatter.formatCellValue(sheet.getRow(j).getCell(10));
-			String country = formatter.formatCellValue(sheet.getRow(j).getCell(11));
-			String cty = formatter.formatCellValue(sheet.getRow(j).getCell(12));
-			String add1 = formatter.formatCellValue( sheet.getRow(j).getCell(13));
-			String add2 = formatter.formatCellValue(sheet.getRow(j).getCell(14));
-			String regnum = formatter.formatCellValue(sheet.getRow(j).getCell(15));
-			String regtype = formatter.formatCellValue(sheet.getRow(j).getCell(16));
+//			String fname = formatter.formatCellValue(sheet.getRow(j).getCell(0));
+//			String lname = formatter.formatCellValue(sheet.getRow(j).getCell(1));
+//			String mail =formatter.formatCellValue( sheet.getRow(j).getCell(2));
+//			String pass = formatter.formatCellValue(sheet.getRow(j).getCell(3));
+//			String cpass = formatter.formatCellValue(sheet.getRow(j).getCell(4));
+//			String code =formatter.formatCellValue( sheet.getRow(j).getCell(5));
+//			String phone = formatter.formatCellValue(sheet.getRow(j).getCell(6));
+			String orgname = formatter.formatCellValue(sheet.getRow(j).getCell(0));
+			String orgaddress = formatter.formatCellValue( sheet.getRow(j).getCell(1));
+			String fee = formatter.formatCellValue(sheet.getRow(j).getCell(2));
+			String pincode = formatter.formatCellValue(sheet.getRow(j).getCell(3));
+			String country = formatter.formatCellValue(sheet.getRow(j).getCell(4));
+			String cty = formatter.formatCellValue(sheet.getRow(j).getCell(5));
+			String add1 = formatter.formatCellValue( sheet.getRow(j).getCell(6));
+			String add2 = formatter.formatCellValue(sheet.getRow(j).getCell(7));
+			String regnum = formatter.formatCellValue(sheet.getRow(j).getCell(8));
+			String regtype = formatter.formatCellValue(sheet.getRow(j).getCell(9));
+			String image = formatter.formatCellValue(sheet.getRow(j).getCell(10));
 			
-			System.out.println(fname+" "+lname+" "+mail+" "+pass+" "+cpass+" "+code+" "+phone+" "+
+			System.out.println(fname+" "+lname+" "+mail+" "+pass+" "+ConPass+" "+code+" "+phone+" "+
 			orgname+" "+orgaddress+" "+fee+" "+pincode+" "+country+" "+cty+" "+add1+" "+add2+" "+regnum+" "+regtype);
 			
 			
@@ -82,7 +89,7 @@ public class TC_ProviderRegister_OrgDetails extends BaseClass{
 			pr.getPassword(pass);
 			logger.info("User entered the password");
 			
-			pr.getCPass(cpass);
+			pr.getCPass(ConPass);
 			logger.info("User entered the confirm password");
 			
 			actions.moveToElement(pr.code()).click().perform();
@@ -107,8 +114,7 @@ public class TC_ProviderRegister_OrgDetails extends BaseClass{
 			actions.moveToElement(pr.phone()).click().perform();
 			pr.getPhone(phone);
 			logger.info("User entered the phone number");
-//			js.executeScript("arguments[0].scrollIntoview();", pr.Next());
-//			pr.gotoNext();
+
 			actions.moveToElement(pr.Next()).click().perform();
 			logger.info("User is on next page");
 			Thread.sleep(1000);
@@ -124,7 +130,7 @@ public class TC_ProviderRegister_OrgDetails extends BaseClass{
 			pr.getPinCode(pincode);
 			Thread.sleep(1000);
 			
-			pr.getCountry().click();                                        //*[@id="menu-"]/div[3]/ul   //*[@id="menu-"]/div[3]/ul
+			pr.getCountry().click();                                        
 			Thread.sleep(1000);
 			List<WebElement> ctry = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')][@style='padding-right: 17px; width: calc(100% + 17px);']/li"));
 			//System.out.println(list.size());
@@ -162,13 +168,33 @@ public class TC_ProviderRegister_OrgDetails extends BaseClass{
 			pr.getOrgPin(regtype);
 			Thread.sleep(1000);
 			js.executeScript("window.scrollBy(0,2000)");
-			pr.gotoNext();
+			//pr.gotoNext();
+			Thread.sleep(1000);
+			driver.findElement(By.id("raised-button-file")).click();
 			Thread.sleep(1000);
 			
-			String status = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/button[2]")).getAttribute("tabindex");
-			System.out.println(status);
+			ClipboardOwner owner = null;
+			String img = image;
 			
-			switch (status){
+			Robot robot = new Robot();
+			StringSelection attachment = new StringSelection(img);
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(attachment, owner);
+			
+			robot.setAutoDelay(3000);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_K);
+			
+			robot.setAutoDelay(3000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			
+			Thread.sleep(1000);
+//			String status = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/button[2]")).getAttribute("tabindex");
+//			System.out.println(status);
+			
+			switch (pr.getStatus()){
 			
 			case "0":
 				actions.moveToElement(pr.Next()).click().perform();
@@ -177,13 +203,13 @@ public class TC_ProviderRegister_OrgDetails extends BaseClass{
 				pr.gotoHome();
 				logger.info("User is on home page");
 				System.out.println("Success");
-				sheet.getRow(j).createCell(7).setCellValue("Success");
+				sheet.getRow(j).createCell(11).setCellValue("Success");
 				break;
-			default:
+			case "-1":
 				pr.gotoHome();
 				logger.info("User is on home page");
 				System.out.println("Fail");
-				sheet.getRow(j).createCell(7).setCellValue("Fail");
+				sheet.getRow(j).createCell(11).setCellValue("Fail");
 				break;
 			
 			}

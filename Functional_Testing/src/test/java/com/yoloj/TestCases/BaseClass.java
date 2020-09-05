@@ -31,11 +31,34 @@ ReadConfig readconfig=new ReadConfig();
 	public String username=readconfig.getUsername();
 	public String password=readconfig.getPassword();
 	public String userRegisterPath =readconfig.getUserRegisterData();
+	public String fname = readconfig.getFirst_Name();
+	public String lname = readconfig.getLast_Name();
+	public String mail = readconfig.getEmail();
+	public String pass = readconfig.getPass();
+	public String ConPass = readconfig.getConPass();
+	public String code = readconfig.getCountryCode();
+	public String phone = readconfig.getPhoneNumber();
 	public static WebDriver driver;
 	public UserRegister_PageObject up;
 	public ProviderRegister_PageObject pr;
 	
 	public static Logger logger;
+	
+	public String[] individualOptions={"Individual","Tax returns","TDS","Legal","Miscelleneous Services"};
+	public String[] taxOptions={"salaried Individuals","Capital Gains","Tax notice management plan","LTCG filling and advisory"};		
+	public String[] tdsOptions = {"Challan 26QB"};
+	public String[] legalOptions = {"Document Review","Legal Drafting","Filling of Form DPT-3"};
+	public String[] IndMisc = {"Advisory tax saving","Ask an expert"};
+	
+	public String[] businessOptions = {"Business Incorporation","GST Service","Startup Services","Legal Complaince Service","Tax Returns","Goverment Registration","Trademark","Miscelleneous Services"};
+	public String[] busIncOptions = {"Private Limited Company","One person company","Limited Liability Partnership","PLC registration","NGO section and company registration"};
+	public String[] gstOptions = {"GST registration","GST filing","Ask an expert","E-way bill service","GST notice-Ask an expert"};
+	public String[] startupOptions = {"Payroll Service","Launch Your Startup","Start up India Registration","Winding up of company","Company and LLP returns"};
+	public String[] legalCompOptions = {"Change company name","Change registered office"};
+	public String[] taxOption = {"TDS returns","Business Tax returns"};
+	public String[] govrOptions = {"Provident Fund","PAN registration"};
+	public String[] tradeOptions = {"Trademark registration","Trademark renewal","Trademark registration in India"};
+	public String[] BusinessMisc = {"List Your Business on government website","LEI Code","15CA Form Filing","Getting FDI in India"};
 	
 	//@Parameters("browser")
 	@BeforeClass
@@ -107,5 +130,7 @@ ReadConfig readconfig=new ReadConfig();
 		}
 		return fos;
 	}
+	
+	
 
 }

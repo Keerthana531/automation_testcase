@@ -78,4 +78,77 @@ Properties pro;
 		String registerData = pro.getProperty("userRegisterData");
 		return registerData;
 	}
+	
+	public String getFirst_Name(){
+		return pro.getProperty("First_Name");
+	}
+	
+	public String getLast_Name(){
+		return pro.getProperty("Last_Name");
+	}
+	
+	public String getEmail(){
+		return pro.getProperty("Email");
+	}
+	
+	public String getPass(){
+		return pro.getProperty("Password");
+	}
+	
+	public String getConPass(){
+		return pro.getProperty("Confirm_Password");
+	}
+	
+	public String getCountryCode(){
+		return pro.getProperty("Country_Code");
+	}
+	
+	public String getPhoneNumber(){
+		return pro.getProperty("Phone_Number");
+	}
+	
+	public String getOrgName(){
+		return pro.getProperty("Organization_Name");
+	}
+	
+	public String getOrgAdd(){
+		return pro.getProperty("Organization_Address");
+	}
+	
+	public String getFee(){
+		return pro.getProperty("Fee");
+	}
+	
+	public String getPinCode(){
+		return pro.getProperty("Pincode");
+	}
+	
+	public String getCountry(){
+		return pro.getProperty("Country");
+	}
+	
+	public String getCity(){
+		return pro.getProperty("City");
+	}
+	public String getAddress1(){
+		return pro.getProperty("Address1");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -1,5 +1,6 @@
 package com.yoloj.PageObjects;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,7 +48,7 @@ public class ProviderRegister_PageObject {
 	WebElement phoneLink;
 	
 	@FindBy(xpath = "//*[@id='root']/div/div/div/div[2]/div[2]/div/div/div/button[2]/span[1]")
-	WebElement NextLink;  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/div/button[2]/span[1]
+	WebElement NextLink;  
 	                      
 	@FindBy(id = "OrgName")
 	WebElement orgNameLink;
@@ -79,8 +80,68 @@ public class ProviderRegister_PageObject {
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div/form/div[15]/div/div/div/input")
 	WebElement OrgPINTypeLink;
 	
-//	@FindBy(xpath = "//*[@id='root']/div/div/div/div[2]/div[2]/div/div/div/button[1]/span[1]")
-//	WebElement orgpinLink;    
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/button[2]")
+	WebElement nextStatuslink;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/button[1]")
+	WebElement ServiceTypelink;
+	
+	@FindBy(xpath = "//*[@id=\"checkboxes-tags-demo\"]")
+	WebElement selectServiceTypelink;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/button[2]")
+	WebElement ServiceExpertiselink;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]")
+	WebElement individualLink;
+	
+	@FindBy(className = "rct-icon")
+	WebElement firstIndLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div/ol/li/ol/li[1]/span/button/span")
+	WebElement secondIndLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div/ol/li/ol/li[2]/span/button/span")
+	WebElement thirdIndLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div/ol/li/ol/li[3]/span/button/span")
+	WebElement fourthIndLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div/ol/li/ol/li[4]/span/button/span")
+	WebElement fifthIndLink;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[1]/div[1]")
+	WebElement businessLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/span/button/span")
+	WebElement firstBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[1]/span/button/span")
+	WebElement secondBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[2]/span/button/span")
+	WebElement thirdBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[3]/span/button/span")
+	WebElement fourthBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[4]/span/button/span")
+	WebElement fifthBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[5]/span/button/span")
+	WebElement sixthBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[6]/span/button/span")
+	WebElement seventhBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[7]/span/button/span")
+	WebElement eigthBusLink;
+	
+	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[8]/span/button/span")
+	WebElement ninthBusLink;
+	
+	
+  
 	
 	public void getProvider(){
 		providerLink.click();
@@ -180,6 +241,111 @@ public class ProviderRegister_PageObject {
 	public void getOrgPin(String orgpin){
 		OrgPINTypeLink.sendKeys(orgpin);
 	}
+	
+	public String getStatus(){
+		return nextStatuslink.getAttribute("tabindex");
+	}
+	
+	public void getServiceType(){
+		ServiceTypelink.click();
+	}
+	
+	public void getServiceExpertise(){
+		ServiceExpertiselink.click();
+	}
+	
+	public void selectService(String option){
+		selectServiceTypelink.sendKeys(option+Keys.ARROW_DOWN+Keys.ENTER);
+	}
+	
+	public void select(){
+		selectServiceTypelink.click();
+	}
+	
+	public void getIndividual(){
+		individualLink.click();
+	}
+	
+	public void getFirstInd() {
+		firstIndLink.click();
+	}
+	
+	public void getSecondInd() {
+		secondIndLink.click();
+	}
+	
+	public void getThirdInd() {
+		thirdIndLink.click();
+	}
+	
+	public void getFourthInd() {
+		fourthIndLink.click();
+	}
+	
+	public void getFifthInd() {
+		fifthIndLink.click();
+	}
+	
+	public void getBusiness() {
+		businessLink.click();
+	}
+	
+	public void getFirstBusiness() {
+		firstBusLink.click();
+	}
+	
+	public void getSecondBusiness() {
+		secondBusLink.click();
+	}
+	
+	public void getThirdBusiness() {
+		thirdBusLink.click();
+	}
+	
+	public void getFourthBusiness() {
+		fourthBusLink.click();
+	}
+	
+	public void getFifthBusiness() {
+		fifthBusLink.click();
+	}
+	
+	public void getSixthBusiness() {
+		sixthBusLink.click();
+	}
+	
+	public void getSeventhBusiness() {
+		seventhBusLink.click();
+	}
+	
+	public void getEigthBusiness() {
+		eigthBusLink.click();
+	}
+	
+	public void getNinthtBusiness() {
+		ninthBusLink.click();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 

@@ -3,6 +3,7 @@ package com.yoloj.TestCases;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -13,6 +14,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.yoloj.PageObjects.ProviderRegister_PageObject;
@@ -36,7 +39,7 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 		int size = sheet.getLastRowNum() - sheet.getFirstRowNum();
 		System.out.println(size);
 		
-		for(int j=1; j<=size; j++){
+		for(int j=4; j<=size; j++){
 			Actions actions = new Actions(driver);
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			
@@ -90,7 +93,7 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			logger.info("User entered the confirm password");
 			
 			actions.moveToElement(pr.code()).click().perform();
-			//pr.getCode().click();
+			
 			Thread.sleep(1000);
 			
 			List<WebElement> list = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')]/li"));
@@ -111,24 +114,26 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			actions.moveToElement(pr.phone()).click().perform();
 			pr.getPhone(phone);
 			logger.info("User entered the phone number");
-			//js.executeScript("arguments[0].scrollIntoview();", pr.Next());
-			//pr.gotoNext();
+			
 			actions.moveToElement(pr.Next()).click().perform();
-			//pr.gotoNext();
 			logger.info("User is on next page");
 			pr.getOrgName(orgname);
+			logger.info("User entered Organization name");
 			Thread.sleep(1000);
 			
 			pr.getOrgAddress(orgaddress);
+			logger.info("User entered Organization address");
 			Thread.sleep(1000);
 			
 			pr.getFee(fee);
+			logger.info("User entered fee");
 			Thread.sleep(1000);
 			
 			pr.getPinCode(pincode);
+			logger.info("User entered pincode");
 			Thread.sleep(1000);
 			
-			pr.getCountry().click();                                        //*[@id="menu-"]/div[3]/ul   //*[@id="menu-"]/div[3]/ul
+			pr.getCountry().click();                                        
 			Thread.sleep(1000);
 			List<WebElement> ctry = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')][@style='padding-right: 17px; width: calc(100% + 17px);']/li"));
 			//System.out.println(list.size());
@@ -137,6 +142,7 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 				if(ctry.get(i).getText().equals(country)){
 					System.out.println(ctry.get(i).getText());
 					ctry.get(i).click();
+					logger.info("User selected the country");
 					break;
 					
 				}
@@ -151,19 +157,30 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 					System.out.println(ctyy.get(k).getText());
 					ctyy.get(k).click();
 					driver.findElement(By.id("otherCitiesLabel")).sendKeys(cty);
+					logger.info("User entered city name");
 					break;
 					
+				}
+				else if(ctyy.get(k).getText().equals(cty)){
+					System.out.println(ctyy.get(k).getText());
+					ctyy.get(k).click();
+					logger.info("User selected the city");
+					break; 
 				}
 			}
 			
 			pr.getAddress1(add1);
+			logger.info("User entered address line 1");
 			Thread.sleep(1000);
 			pr.getAddress2(add2);
+			logger.info("User entered address line 2");
 			Thread.sleep(1000);
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 			pr.getOrgNumber(regnum);
+			logger.info("User entered Organization Registration number");
 			Thread.sleep(1000);
 			pr.getOrgPin(regtype);
+			logger.info("User entered Organization Pin type");
 			Thread.sleep(1000);
 			js.executeScript("window.scrollBy(0,2000)");
 			Thread.sleep(1000);
@@ -171,74 +188,312 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			Thread.sleep(1000);
 			
 			
-			driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/button[1]")).click();
+			pr.getServiceType();
 			String type[]=stype.split(",");
 			for(String opt: type){
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("//*[@id=\"checkboxes-tags-demo\"]")).sendKeys(opt+Keys.ARROW_DOWN+Keys.ENTER);
+			pr.selectService(opt);
 			Thread.sleep(1000);
 			}
-			
-			driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/button[2]")).click();
+			logger.info("User selected Service type");
+			pr.getServiceExpertise();
 			String expert[]=sexpert.split(",");
 			for(String opt1:expert){
 				Thread.sleep(1000);
-				driver.findElement(By.xpath("//*[@id=\"checkboxes-tags-demo\"]")).sendKeys(opt1+Keys.ARROW_DOWN+Keys.ENTER);
+				pr.selectService(opt1);
 				Thread.sleep(1000);
 			}
-			driver.findElement(By.xpath("//*[@id=\"checkboxes-tags-demo\"]")).click();
+			logger.info("User selected Service Expertise");
+			pr.select();
 			Thread.sleep(1000);
-			if(pr.Next().isEnabled()){
-				actions.moveToElement(pr.Next()).click().perform();
-				Thread.sleep(1000);
-				logger.info("User is on next page");
-				driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]")).click();
-				Thread.sleep(2000);
-				driver.findElement(By.className("rct-icon")).click();
-				Thread.sleep(2000);
-				        
-				List<WebElement> detail = driver.findElements(By.className("rct-title"));
-				System.out.println(detail.size());                 //*[@id="rct-b3oZMqm"]/ol/li/ol/li[1]/span/label
-				String sdet[]=sdetail.split(",");
-				for(String det:sdet){
-				for(int i=0; i<detail.size(); i++){
-					if(detail.get(i).getText().equals(det)){
-						System.out.println(detail.get(i).getText());
-						detail.get(i).click(); 
-						break;
+			
+			switch (pr.getStatus()){
+			
+				case "0":
+					actions.moveToElement(pr.Next()).click().perform();
+					Thread.sleep(1000);
+					logger.info("User is on next page");
+					
+					pr.getIndividual();
+					Thread.sleep(2000);
+					pr.getFirstInd();
+					Thread.sleep(2000);
+					 
+					 String sdet[]=sdetail.split(",");
+					 for(String det:sdet){
+						System.out.println(det);
 						
+							if(Arrays.stream(individualOptions).anyMatch(det::equals)){
+								List<WebElement> detail = driver.findElements(By.className("rct-title"));
+								System.out.println(detail.size());                 
+								for(int i=0; i<detail.size(); i++){
+								if(detail.get(i).getText().equals(det)){
+									System.out.println(detail.get(i).getText());
+									detail.get(i).click(); 
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+								logger.info("User selected Individual service details");
+								}
+							else if(Arrays.stream(taxOptions).anyMatch(det::equals)){
+								pr.getSecondInd();
+								 Thread.sleep(1000);
+								 List<WebElement> detail = driver.findElements(By.className("rct-title"));
+									System.out.println(detail.size());                 
+									for(int i=0; i<detail.size(); i++){
+								 if(detail.get(i).getText().equals(det)){
+										System.out.println(detail.get(i).getText());
+										detail.get(i).click(); 
+										Thread.sleep(1000);
+										break;
+										
+									}
+								
+								}
+									logger.info("User selected Individual service details");
+							}
+							else if(Arrays.stream(tdsOptions).anyMatch(det::equals)){
+								pr.getThirdInd();
+								 Thread.sleep(1000);
+								 List<WebElement> detail = driver.findElements(By.className("rct-title"));
+									System.out.println(detail.size());                 
+									for(int i=0; i<detail.size(); i++){
+								 if(detail.get(i).getText().equals(det)){
+										System.out.println(detail.get(i).getText());
+										detail.get(i).click(); 
+										Thread.sleep(1000);
+										break;
+										
+									}
+									}
+							}
+							else if(Arrays.stream(legalOptions).anyMatch(det::equals)){
+								pr.getFourthInd();
+								 Thread.sleep(1000);
+								 List<WebElement> detail = driver.findElements(By.className("rct-title"));
+									System.out.println(detail.size());                 
+									for(int i=0; i<detail.size(); i++){
+								 if(detail.get(i).getText().equals(det)){
+										System.out.println(detail.get(i).getText());
+										detail.get(i).click(); 
+										Thread.sleep(1000);
+										break;
+										
+									}
+								}
+									logger.info("User selected Individual service details");
+							}
+							else if(Arrays.stream(IndMisc).anyMatch(det::equals)){
+								pr.getFifthInd();
+								 Thread.sleep(1000);
+								 List<WebElement> detail = driver.findElements(By.className("rct-title"));
+									System.out.println(detail.size());                 
+									for(int i=0; i<detail.size(); i++){
+								 if(detail.get(i).getText().equals(det)){
+										System.out.println(detail.get(i).getText());
+										detail.get(i).click(); 
+										Thread.sleep(1000);
+										break;
+										
+									}
+								}
+									logger.info("User selected Individual service details");
+							}
+							else if(sdet.length==0){
+								pr.getFirstInd();
+							}
+							else{
+								continue;
+							}
+						}
+					pr.getIndividual();
+					Thread.sleep(1000);
+					pr.getBusiness();
+					Thread.sleep(2000);
+					pr.getFirstBusiness();
+					Thread.sleep(2000);
+					js.executeScript("window.scrollBy(0,2000)");
+					Thread.sleep(1000);
+					String sbus[]=business.split(",");
+					for(String bu:sbus){
+						System.out.println(bu);
+						if(Arrays.stream(businessOptions).anyMatch(bu::equals)){
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(busIncOptions).anyMatch(bu::equals)){
+							pr.getSecondBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(gstOptions).anyMatch(bu::equals)){
+							pr.getThirdBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(startupOptions).anyMatch(bu::equals)){
+							pr.getFourthBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(legalCompOptions).anyMatch(bu::equals)){
+							pr.getFifthBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(taxOption).anyMatch(bu::equals)){
+							pr.getSixthBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(govrOptions).anyMatch(bu::equals)){
+							pr.getSeventhBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(tradeOptions).anyMatch(bu::equals)){
+							pr.getEigthBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+								
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(Arrays.stream(BusinessMisc).anyMatch(bu::equals)){
+							pr.getNinthtBusiness();
+							Thread.sleep(1000);
+							List<WebElement> bus = driver.findElements(By.className("rct-title"));
+							System.out.println(bus.size());
+							for(int i=0; i<bus.size(); i++){
+								if(bus.get(i).getText().equals(bu)){
+									System.out.println(bus.get(i).getText());
+									bus.get(i).click();
+									Thread.sleep(1000);
+									break;
+									
+								}
+							
+							}
+							logger.info("User selected Business service details");
+						}
+						else if(sbus.length==0){
+							pr.getFirstBusiness();
+						}
+						else{
+							continue;
+						}
 					}
-				}
-				}
-				driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]")).click();
-				Thread.sleep(1000);
-				driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[1]/div[1]")).click();
-				Thread.sleep(6000);
-				driver.findElement(By.className("rct-icon")).click();
-				Thread.sleep(2000);
-				List<WebElement> bus = driver.findElements(By.className("rct-title"));
-				System.out.println(bus.size());
-				String sbus[]=business.split(",");
-				for(String bu:sbus){
-				for(int i=0; i<bus.size(); i++){
-					if(bus.get(i).getText().equals(bu)){
-						System.out.println(bus.get(i).getText());
-						bus.get(i).click();
-						break;
-						
-					}
-				}
-				}
-				driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[1]/div[1]")).click();
-				Thread.sleep(1000);
+					js.executeScript("window.scrollBy(0,-1000)");
+					Thread.sleep(1000);
+					pr.getBusiness();
+					Thread.sleep(1000);
+					pr.gotoHome();
+					logger.info("User is on home page");
+					sheet.getRow(j).createCell(19).setCellValue("Success");
+					break;
+				
+			case "-1":
 				pr.gotoHome();
 				logger.info("User is on home page");
-				sheet.getRow(j).createCell(19).setCellValue("Success");
-			}
-			else{
-				pr.gotoHome();
-				logger.info("User is on home page");
-				sheet.getRow(j).createCell(19).setCellValue("Fail");
+				System.out.println("Fail");
+				sheet.getRow(j).createCell(7).setCellValue("Fail");
+				break;
+		
 			}
 		}
 
@@ -248,4 +503,5 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 	}
 	
 
-}
+
+	}

@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test verbose="2" name="Default test">
     <classes>
-<<<<<<< HEAD
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails"/>
-=======
-      <class name="com.yoloj.TestCases.TC_Login_Retest">
-        <methods>
-          <include name="loginTestCase"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.yoloj.TestCases.TC_Login_Retest -->
->>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
+      <class name="com.yoloj.TestCases.TC_ProviderRegister_OrgDetails"/>
     </classes>
-<<<<<<< HEAD
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails">
+      <class name="com.yoloj.TestCases.TC_ProviderRegister_OrgDetails">
         <methods>
+          <include name="OrgDetails"/>
           <include name="setup"/>
-          <include name="ServideType"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails -->
+      </class> <!-- com.yoloj.TestCases.TC_ProviderRegister_OrgDetails -->
     </classes>
-=======
->>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

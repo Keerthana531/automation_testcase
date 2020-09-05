@@ -3727,3 +3727,1025 @@
 2020-09-02 14:16:07,158 [main] INFO yoloj - Using loop to get the data from cells
 2020-09-02 14:16:07,162 [main] INFO yoloj - User clicks the Signup link
 >>>>>>> branch 'Keerthana' of https://github.com/Keerthana531/automation_testcase.git
+2020-09-04 11:22:49,038 [main] INFO yoloj - URL is opened
+2020-09-04 11:24:49,375 [main] INFO yoloj - URL is opened
+2020-09-04 11:24:58,641 [main] INFO yoloj - User entered the first name
+2020-09-04 11:24:59,508 [main] INFO yoloj - User entered the last name
+2020-09-04 11:25:04,190 [main] INFO yoloj - User entered the mail
+2020-09-04 11:25:06,468 [main] INFO yoloj - User entered the password
+2020-09-04 11:25:08,679 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:25:19,760 [main] INFO yoloj - user selected the code
+2020-09-04 11:25:23,536 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:25:23,982 [main] INFO yoloj - User is on next page
+2020-09-04 11:26:04,234 [main] INFO yoloj - User is on home page
+2020-09-04 11:26:10,083 [main] INFO yoloj - User entered the first name
+2020-09-04 11:26:10,917 [main] INFO yoloj - User entered the last name
+2020-09-04 11:26:15,457 [main] INFO yoloj - User entered the mail
+2020-09-04 11:26:17,606 [main] INFO yoloj - User entered the password
+2020-09-04 11:26:19,785 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:26:30,041 [main] INFO yoloj - user selected the code
+2020-09-04 11:26:33,634 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:26:34,006 [main] INFO yoloj - User is on next page
+2020-09-04 11:29:26,493 [main] INFO yoloj - URL is opened
+2020-09-04 11:29:36,006 [main] INFO yoloj - User entered the first name
+2020-09-04 11:29:36,871 [main] INFO yoloj - User entered the last name
+2020-09-04 11:29:41,705 [main] INFO yoloj - User entered the mail
+2020-09-04 11:29:44,051 [main] INFO yoloj - User entered the password
+2020-09-04 11:29:46,348 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:29:57,673 [main] INFO yoloj - user selected the code
+2020-09-04 11:30:01,496 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:30:01,953 [main] INFO yoloj - User is on next page
+2020-09-04 11:30:44,295 [main] INFO yoloj - User is on next page
+2020-09-04 11:30:44,793 [main] INFO yoloj - User is on home page
+2020-09-04 11:30:50,073 [main] INFO yoloj - User entered the first name
+2020-09-04 11:30:50,882 [main] INFO yoloj - User entered the last name
+2020-09-04 11:30:55,570 [main] INFO yoloj - User entered the mail
+2020-09-04 11:30:57,838 [main] INFO yoloj - User entered the password
+2020-09-04 11:31:00,146 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:31:10,405 [main] INFO yoloj - user selected the code
+2020-09-04 11:31:14,175 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:31:14,614 [main] INFO yoloj - User is on next page
+2020-09-04 11:31:49,229 [main] INFO yoloj - User is on home page
+2020-09-04 11:31:54,492 [main] INFO yoloj - User entered the first name
+2020-09-04 11:31:55,420 [main] INFO yoloj - User entered the last name
+2020-09-04 11:32:00,093 [main] INFO yoloj - User entered the mail
+2020-09-04 11:32:02,330 [main] INFO yoloj - User entered the password
+2020-09-04 11:32:04,532 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:32:14,083 [main] INFO yoloj - user selected the code
+2020-09-04 11:32:17,737 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:32:18,159 [main] INFO yoloj - User is on next page
+2020-09-04 11:32:50,646 [main] INFO yoloj - User is on home page
+2020-09-04 11:32:55,827 [main] INFO yoloj - User entered the first name
+2020-09-04 11:32:56,649 [main] INFO yoloj - User entered the last name
+2020-09-04 11:33:01,235 [main] INFO yoloj - User entered the mail
+2020-09-04 11:33:03,497 [main] INFO yoloj - User entered the password
+2020-09-04 11:33:05,765 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:33:16,549 [main] INFO yoloj - user selected the code
+2020-09-04 11:33:20,189 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:33:20,591 [main] INFO yoloj - User is on next page
+2020-09-04 11:33:56,090 [main] INFO yoloj - User is on home page
+2020-09-04 11:34:01,354 [main] INFO yoloj - User entered the first name
+2020-09-04 11:34:02,239 [main] INFO yoloj - User entered the last name
+2020-09-04 11:34:07,529 [main] INFO yoloj - User entered the mail
+2020-09-04 11:34:09,856 [main] INFO yoloj - User entered the password
+2020-09-04 11:34:12,062 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:34:23,018 [main] INFO yoloj - user selected the code
+2020-09-04 11:34:26,621 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:34:27,039 [main] INFO yoloj - User is on next page
+2020-09-04 11:35:02,018 [main] INFO yoloj - User is on home page
+2020-09-04 11:41:11,237 [main] INFO yoloj - URL is opened
+2020-09-04 11:41:20,894 [main] INFO yoloj - User entered the first name
+2020-09-04 11:41:21,825 [main] INFO yoloj - User entered the last name
+2020-09-04 11:41:26,817 [main] INFO yoloj - User entered the mail
+2020-09-04 11:41:29,164 [main] INFO yoloj - User entered the password
+2020-09-04 11:41:31,508 [main] INFO yoloj - User entered the confirm password
+2020-09-04 11:41:43,332 [main] INFO yoloj - user selected the code
+2020-09-04 11:41:47,224 [main] INFO yoloj - User entered the phone number
+2020-09-04 11:41:47,771 [main] INFO yoloj - User is on next page
+2020-09-04 11:42:44,115 [main] INFO yoloj - User is on next page
+2020-09-04 18:47:16,315 [main] INFO yoloj - URL is opened
+2020-09-04 18:47:27,380 [main] INFO yoloj - User entered the first name
+2020-09-04 18:47:28,330 [main] INFO yoloj - User entered the last name
+2020-09-04 18:47:34,789 [main] INFO yoloj - User entered the mail
+2020-09-04 18:47:37,523 [main] INFO yoloj - User entered the password
+2020-09-04 18:47:39,989 [main] INFO yoloj - User entered the confirm password
+2020-09-04 18:47:52,591 [main] INFO yoloj - user selected the code
+2020-09-04 18:47:56,709 [main] INFO yoloj - User entered the phone number
+2020-09-04 18:47:57,378 [main] INFO yoloj - User is on next page
+2020-09-04 18:48:55,488 [main] INFO yoloj - User is on next page
+2020-09-04 18:49:12,491 [main] INFO yoloj - User is on home page
+2020-09-04 18:49:19,315 [main] INFO yoloj - User entered the first name
+2020-09-04 18:49:21,769 [main] INFO yoloj - User entered the last name
+2020-09-04 18:49:25,430 [main] INFO yoloj - User entered the mail
+2020-09-04 18:49:27,838 [main] INFO yoloj - User entered the password
+2020-09-04 18:49:30,738 [main] INFO yoloj - User entered the confirm password
+2020-09-04 18:53:35,855 [main] INFO yoloj - URL is opened
+2020-09-04 18:53:45,849 [main] INFO yoloj - User entered the first name
+2020-09-04 18:53:46,746 [main] INFO yoloj - User entered the last name
+2020-09-04 18:53:51,980 [main] INFO yoloj - User entered the mail
+2020-09-04 18:53:54,960 [main] INFO yoloj - User entered the password
+2020-09-04 18:53:57,568 [main] INFO yoloj - User entered the confirm password
+2020-09-04 20:30:29,065 [main] INFO yoloj - URL is opened
+2020-09-04 20:30:40,386 [main] INFO yoloj - User entered the first name
+2020-09-04 20:30:41,280 [main] INFO yoloj - User entered the last name
+2020-09-04 20:30:46,336 [main] INFO yoloj - User entered the mail
+2020-09-04 20:30:48,784 [main] INFO yoloj - User entered the password
+2020-09-04 20:30:51,098 [main] INFO yoloj - User entered the confirm password
+2020-09-04 20:31:03,354 [main] INFO yoloj - user selected the code
+2020-09-04 20:31:06,513 [main] INFO yoloj - User entered the phone number
+2020-09-04 20:31:07,359 [main] INFO yoloj - User is on next page
+2020-09-04 20:32:04,493 [main] INFO yoloj - User is on next page
+2020-09-04 20:41:00,507 [main] INFO yoloj - URL is opened
+2020-09-04 20:41:09,911 [main] INFO yoloj - User entered the first name
+2020-09-04 20:41:10,814 [main] INFO yoloj - User entered the last name
+2020-09-04 20:41:15,836 [main] INFO yoloj - User entered the mail
+2020-09-04 20:41:18,183 [main] INFO yoloj - User entered the password
+2020-09-04 20:41:20,549 [main] INFO yoloj - User entered the confirm password
+2020-09-04 20:41:31,349 [main] INFO yoloj - user selected the code
+2020-09-04 20:41:34,478 [main] INFO yoloj - User entered the phone number
+2020-09-04 20:41:34,956 [main] INFO yoloj - User is on next page
+2020-09-04 20:42:31,257 [main] INFO yoloj - User is on next page
+2020-09-04 20:42:41,485 [main] INFO yoloj - User is on home page
+2020-09-04 20:42:47,140 [main] INFO yoloj - User entered the first name
+2020-09-04 20:42:48,006 [main] INFO yoloj - User entered the last name
+2020-09-04 20:42:52,679 [main] INFO yoloj - User entered the mail
+2020-09-04 20:42:54,961 [main] INFO yoloj - User entered the password
+2020-09-04 20:42:57,309 [main] INFO yoloj - User entered the confirm password
+2020-09-04 20:43:08,960 [main] INFO yoloj - user selected the code
+2020-09-04 20:43:14,314 [main] INFO yoloj - User entered the phone number
+2020-09-04 20:43:14,758 [main] INFO yoloj - User is on next page
+2020-09-04 20:46:25,310 [main] INFO yoloj - URL is opened
+2020-09-04 20:46:34,741 [main] INFO yoloj - User entered the first name
+2020-09-04 20:46:35,720 [main] INFO yoloj - User entered the last name
+2020-09-04 20:46:40,614 [main] INFO yoloj - User entered the mail
+2020-09-04 20:46:42,915 [main] INFO yoloj - User entered the password
+2020-09-04 20:46:45,262 [main] INFO yoloj - User entered the confirm password
+2020-09-04 20:46:56,081 [main] INFO yoloj - user selected the code
+2020-09-04 20:46:59,334 [main] INFO yoloj - User entered the phone number
+2020-09-04 20:46:59,757 [main] INFO yoloj - User is on next page
+2020-09-04 20:47:55,810 [main] INFO yoloj - User is on next page
+2020-09-04 20:48:05,933 [main] INFO yoloj - User is on home page
+2020-09-04 20:53:22,396 [main] INFO yoloj - URL is opened
+2020-09-04 20:53:31,956 [main] INFO yoloj - User entered the first name
+2020-09-04 20:53:32,866 [main] INFO yoloj - User entered the last name
+2020-09-04 20:53:37,787 [main] INFO yoloj - User entered the mail
+2020-09-04 20:53:40,071 [main] INFO yoloj - User entered the password
+2020-09-04 20:53:42,411 [main] INFO yoloj - User entered the confirm password
+2020-09-04 20:53:54,089 [main] INFO yoloj - user selected the code
+2020-09-04 20:53:57,509 [main] INFO yoloj - User entered the phone number
+2020-09-04 20:53:58,069 [main] INFO yoloj - User is on next page
+2020-09-04 20:54:54,325 [main] INFO yoloj - User is on next page
+2020-09-04 21:01:50,461 [main] INFO yoloj - URL is opened
+2020-09-04 21:01:59,893 [main] INFO yoloj - User entered the first name
+2020-09-04 21:02:00,759 [main] INFO yoloj - User entered the last name
+2020-09-04 21:02:05,731 [main] INFO yoloj - User entered the mail
+2020-09-04 21:02:07,995 [main] INFO yoloj - User entered the password
+2020-09-04 21:02:10,302 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:02:21,930 [main] INFO yoloj - user selected the code
+2020-09-04 21:02:25,087 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:02:25,641 [main] INFO yoloj - User is on next page
+2020-09-04 21:03:21,310 [main] INFO yoloj - User is on next page
+2020-09-04 21:05:39,920 [main] INFO yoloj - URL is opened
+2020-09-04 21:05:49,789 [main] INFO yoloj - User entered the first name
+2020-09-04 21:05:50,642 [main] INFO yoloj - User entered the last name
+2020-09-04 21:05:55,462 [main] INFO yoloj - User entered the mail
+2020-09-04 21:05:57,769 [main] INFO yoloj - User entered the password
+2020-09-04 21:06:00,090 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:06:11,329 [main] INFO yoloj - user selected the code
+2020-09-04 21:06:15,226 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:06:15,682 [main] INFO yoloj - User is on next page
+2020-09-04 21:07:11,361 [main] INFO yoloj - User is on next page
+2020-09-04 21:14:23,208 [main] INFO yoloj - URL is opened
+2020-09-04 21:14:33,490 [main] INFO yoloj - User entered the first name
+2020-09-04 21:14:34,496 [main] INFO yoloj - User entered the last name
+2020-09-04 21:14:40,699 [main] INFO yoloj - User entered the mail
+2020-09-04 21:14:43,061 [main] INFO yoloj - User entered the password
+2020-09-04 21:14:45,535 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:14:56,983 [main] INFO yoloj - user selected the code
+2020-09-04 21:15:01,004 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:15:01,440 [main] INFO yoloj - User is on next page
+2020-09-04 21:15:57,664 [main] INFO yoloj - User is on next page
+2020-09-04 21:22:28,806 [main] INFO yoloj - URL is opened
+2020-09-04 21:22:38,147 [main] INFO yoloj - User entered the first name
+2020-09-04 21:22:38,974 [main] INFO yoloj - User entered the last name
+2020-09-04 21:22:43,918 [main] INFO yoloj - User entered the mail
+2020-09-04 21:22:46,219 [main] INFO yoloj - User entered the password
+2020-09-04 21:22:48,593 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:23:00,061 [main] INFO yoloj - user selected the code
+2020-09-04 21:23:03,228 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:23:03,765 [main] INFO yoloj - User is on next page
+2020-09-04 21:23:59,784 [main] INFO yoloj - User is on next page
+2020-09-04 21:24:11,581 [main] INFO yoloj - User is on home page
+2020-09-04 21:24:17,085 [main] INFO yoloj - User entered the first name
+2020-09-04 21:24:17,921 [main] INFO yoloj - User entered the last name
+2020-09-04 21:24:22,887 [main] INFO yoloj - User entered the mail
+2020-09-04 21:24:25,443 [main] INFO yoloj - User entered the password
+2020-09-04 21:24:27,786 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:30:21,384 [main] INFO yoloj - URL is opened
+2020-09-04 21:30:30,815 [main] INFO yoloj - User entered the first name
+2020-09-04 21:30:31,697 [main] INFO yoloj - User entered the last name
+2020-09-04 21:30:36,667 [main] INFO yoloj - User entered the mail
+2020-09-04 21:30:38,965 [main] INFO yoloj - User entered the password
+2020-09-04 21:30:41,334 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:30:53,280 [main] INFO yoloj - user selected the code
+2020-09-04 21:30:56,386 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:30:56,971 [main] INFO yoloj - User is on next page
+2020-09-04 21:31:52,779 [main] INFO yoloj - User is on next page
+2020-09-04 21:32:56,453 [main] INFO yoloj - URL is opened
+2020-09-04 21:33:05,664 [main] INFO yoloj - User entered the first name
+2020-09-04 21:33:06,548 [main] INFO yoloj - User entered the last name
+2020-09-04 21:33:11,561 [main] INFO yoloj - User entered the mail
+2020-09-04 21:33:13,922 [main] INFO yoloj - User entered the password
+2020-09-04 21:33:16,260 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:33:27,078 [main] INFO yoloj - user selected the code
+2020-09-04 21:33:30,209 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:33:30,687 [main] INFO yoloj - User is on next page
+2020-09-04 21:34:26,752 [main] INFO yoloj - User is on next page
+2020-09-04 21:35:45,456 [main] INFO yoloj - URL is opened
+2020-09-04 21:35:54,677 [main] INFO yoloj - User entered the first name
+2020-09-04 21:35:55,604 [main] INFO yoloj - User entered the last name
+2020-09-04 21:36:00,556 [main] INFO yoloj - User entered the mail
+2020-09-04 21:36:02,877 [main] INFO yoloj - User entered the password
+2020-09-04 21:36:05,235 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:36:16,776 [main] INFO yoloj - user selected the code
+2020-09-04 21:36:19,942 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:36:20,513 [main] INFO yoloj - User is on next page
+2020-09-04 21:37:16,476 [main] INFO yoloj - User is on next page
+2020-09-04 21:39:00,325 [main] INFO yoloj - URL is opened
+2020-09-04 21:39:09,864 [main] INFO yoloj - User entered the first name
+2020-09-04 21:39:10,790 [main] INFO yoloj - User entered the last name
+2020-09-04 21:39:15,651 [main] INFO yoloj - User entered the mail
+2020-09-04 21:39:17,935 [main] INFO yoloj - User entered the password
+2020-09-04 21:39:20,373 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:39:31,250 [main] INFO yoloj - user selected the code
+2020-09-04 21:39:34,439 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:39:34,926 [main] INFO yoloj - User is on next page
+2020-09-04 21:40:30,601 [main] INFO yoloj - User is on next page
+2020-09-04 21:44:21,777 [main] INFO yoloj - URL is opened
+2020-09-04 21:44:31,159 [main] INFO yoloj - User entered the first name
+2020-09-04 21:44:32,036 [main] INFO yoloj - User entered the last name
+2020-09-04 21:44:37,059 [main] INFO yoloj - User entered the mail
+2020-09-04 21:44:39,319 [main] INFO yoloj - User entered the password
+2020-09-04 21:44:41,585 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:44:53,115 [main] INFO yoloj - user selected the code
+2020-09-04 21:44:57,001 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:44:57,503 [main] INFO yoloj - User is on next page
+2020-09-04 21:45:53,054 [main] INFO yoloj - User is on next page
+2020-09-04 21:46:16,975 [main] INFO yoloj - User is on home page
+2020-09-04 21:46:22,975 [main] INFO yoloj - User entered the first name
+2020-09-04 21:46:23,829 [main] INFO yoloj - User entered the last name
+2020-09-04 21:46:28,707 [main] INFO yoloj - User entered the mail
+2020-09-04 21:46:30,982 [main] INFO yoloj - User entered the password
+2020-09-04 21:46:33,224 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:53:17,032 [main] INFO yoloj - URL is opened
+2020-09-04 21:53:27,565 [main] INFO yoloj - User entered the first name
+2020-09-04 21:53:29,810 [main] INFO yoloj - User entered the last name
+2020-09-04 21:53:33,738 [main] INFO yoloj - User entered the mail
+2020-09-04 21:53:36,071 [main] INFO yoloj - User entered the password
+2020-09-04 21:53:38,395 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:53:49,687 [main] INFO yoloj - user selected the code
+2020-09-04 21:53:53,762 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:53:54,217 [main] INFO yoloj - User is on next page
+2020-09-04 21:54:47,412 [main] INFO yoloj - User is on next page
+2020-09-04 21:55:11,267 [main] INFO yoloj - User is on home page
+2020-09-04 21:55:16,569 [main] INFO yoloj - User entered the first name
+2020-09-04 21:55:17,444 [main] INFO yoloj - User entered the last name
+2020-09-04 21:55:22,091 [main] INFO yoloj - User entered the mail
+2020-09-04 21:55:24,386 [main] INFO yoloj - User entered the password
+2020-09-04 21:55:26,606 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:55:37,643 [main] INFO yoloj - user selected the code
+2020-09-04 21:55:43,031 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:55:43,575 [main] INFO yoloj - User is on next page
+2020-09-04 21:56:38,125 [main] INFO yoloj - User is on next page
+2020-09-04 21:57:00,396 [main] INFO yoloj - User is on home page
+2020-09-04 21:57:06,367 [main] INFO yoloj - User entered the first name
+2020-09-04 21:57:07,189 [main] INFO yoloj - User entered the last name
+2020-09-04 21:57:12,433 [main] INFO yoloj - User entered the mail
+2020-09-04 21:57:14,718 [main] INFO yoloj - User entered the password
+2020-09-04 21:57:16,994 [main] INFO yoloj - User entered the confirm password
+2020-09-04 21:57:28,290 [main] INFO yoloj - user selected the code
+2020-09-04 21:57:32,915 [main] INFO yoloj - User entered the phone number
+2020-09-04 21:57:33,325 [main] INFO yoloj - User is on next page
+2020-09-04 21:58:28,419 [main] INFO yoloj - User is on next page
+2020-09-04 21:58:51,392 [main] INFO yoloj - User is on home page
+2020-09-04 21:58:57,186 [main] INFO yoloj - User entered the first name
+2020-09-04 21:58:58,042 [main] INFO yoloj - User entered the last name
+2020-09-05 08:55:55,349 [main] INFO yoloj - URL is opened
+2020-09-05 08:56:05,384 [main] INFO yoloj - User entered the first name
+2020-09-05 08:56:06,373 [main] INFO yoloj - User entered the last name
+2020-09-05 08:56:11,673 [main] INFO yoloj - User entered the mail
+2020-09-05 08:56:14,138 [main] INFO yoloj - User entered the password
+2020-09-05 08:56:16,683 [main] INFO yoloj - User entered the confirm password
+2020-09-05 08:56:27,994 [main] INFO yoloj - user selected the code
+2020-09-05 08:56:32,180 [main] INFO yoloj - User entered the phone number
+2020-09-05 08:56:32,808 [main] INFO yoloj - User is on next page
+2020-09-05 08:57:28,055 [main] INFO yoloj - User is on next page
+2020-09-05 08:57:45,174 [main] INFO yoloj - User is on home page
+2020-09-05 09:05:48,768 [main] INFO yoloj - URL is opened
+2020-09-05 09:05:58,649 [main] INFO yoloj - User entered the first name
+2020-09-05 09:05:59,608 [main] INFO yoloj - User entered the last name
+2020-09-05 09:06:04,858 [main] INFO yoloj - User entered the mail
+2020-09-05 09:06:07,346 [main] INFO yoloj - User entered the password
+2020-09-05 09:06:09,781 [main] INFO yoloj - User entered the confirm password
+2020-09-05 09:06:22,371 [main] INFO yoloj - user selected the code
+2020-09-05 09:06:26,540 [main] INFO yoloj - User entered the phone number
+2020-09-05 09:06:27,104 [main] INFO yoloj - User is on next page
+2020-09-05 09:07:23,694 [main] INFO yoloj - User is on next page
+2020-09-05 09:25:09,253 [main] INFO yoloj - URL is opened
+2020-09-05 09:25:18,541 [main] INFO yoloj - User entered the first name
+2020-09-05 09:25:19,443 [main] INFO yoloj - User entered the last name
+2020-09-05 09:25:24,315 [main] INFO yoloj - User entered the mail
+2020-09-05 09:25:26,659 [main] INFO yoloj - User entered the password
+2020-09-05 09:25:29,122 [main] INFO yoloj - User entered the confirm password
+2020-09-05 09:25:40,749 [main] INFO yoloj - user selected the code
+2020-09-05 09:25:43,980 [main] INFO yoloj - User entered the phone number
+2020-09-05 09:25:44,585 [main] INFO yoloj - User is on next page
+2020-09-05 09:26:37,898 [main] INFO yoloj - User is on next page
+2020-09-05 09:30:57,638 [main] INFO yoloj - URL is opened
+2020-09-05 09:31:06,631 [main] INFO yoloj - User entered the first name
+2020-09-05 09:31:07,533 [main] INFO yoloj - User entered the last name
+2020-09-05 09:31:12,298 [main] INFO yoloj - User entered the mail
+2020-09-05 09:31:14,599 [main] INFO yoloj - User entered the password
+2020-09-05 09:31:16,822 [main] INFO yoloj - User entered the confirm password
+2020-09-05 09:31:28,085 [main] INFO yoloj - user selected the code
+2020-09-05 09:31:31,946 [main] INFO yoloj - User entered the phone number
+2020-09-05 09:31:32,405 [main] INFO yoloj - User is on next page
+2020-09-05 09:32:25,479 [main] INFO yoloj - User is on next page
+2020-09-05 09:32:47,405 [main] INFO yoloj - User is on home page
+2020-09-05 10:02:43,401 [main] INFO yoloj - URL is opened
+2020-09-05 10:02:52,534 [main] INFO yoloj - User entered the first name
+2020-09-05 10:02:53,397 [main] INFO yoloj - User entered the last name
+2020-09-05 10:02:58,233 [main] INFO yoloj - User entered the mail
+2020-09-05 10:03:00,563 [main] INFO yoloj - User entered the password
+2020-09-05 10:03:02,874 [main] INFO yoloj - User entered the confirm password
+2020-09-05 10:03:14,452 [main] INFO yoloj - user selected the code
+2020-09-05 10:03:18,244 [main] INFO yoloj - User entered the phone number
+2020-09-05 10:03:18,842 [main] INFO yoloj - User is on next page
+2020-09-05 10:04:11,826 [main] INFO yoloj - User is on next page
+2020-09-05 10:04:29,045 [main] INFO yoloj - User is on home page
+2020-09-05 10:04:34,353 [main] INFO yoloj - User entered the first name
+2020-09-05 10:04:35,335 [main] INFO yoloj - User entered the last name
+2020-09-05 10:04:40,187 [main] INFO yoloj - User entered the mail
+2020-09-05 12:25:28,818 [main] INFO yoloj - URL is opened
+2020-09-05 12:25:39,587 [main] INFO yoloj - User entered the first name
+2020-09-05 12:25:40,461 [main] INFO yoloj - User entered the last name
+2020-09-05 12:25:45,398 [main] INFO yoloj - User entered the mail
+2020-09-05 12:25:47,706 [main] INFO yoloj - User entered the password
+2020-09-05 12:25:50,111 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:26:01,746 [main] INFO yoloj - user selected the code
+2020-09-05 12:26:05,051 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:26:05,592 [main] INFO yoloj - User is on next page
+2020-09-05 12:26:06,612 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:26:11,665 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:26:14,301 [main] INFO yoloj - User entered fee
+2020-09-05 12:26:17,341 [main] INFO yoloj - User entered pincode
+2020-09-05 12:26:26,039 [main] INFO yoloj - User selected the country
+2020-09-05 12:26:31,251 [main] INFO yoloj - User entered city name
+2020-09-05 12:26:34,331 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:26:38,464 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:26:41,257 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:26:43,292 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:26:50,208 [main] INFO yoloj - User selected Service type
+2020-09-05 12:26:56,635 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:26:59,176 [main] INFO yoloj - User is on next page
+2020-09-05 12:27:06,663 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:27:07,951 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:27:15,381 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:32:25,972 [main] INFO yoloj - URL is opened
+2020-09-05 12:32:35,409 [main] INFO yoloj - User entered the first name
+2020-09-05 12:32:36,346 [main] INFO yoloj - User entered the last name
+2020-09-05 12:32:41,257 [main] INFO yoloj - User entered the mail
+2020-09-05 12:32:43,627 [main] INFO yoloj - User entered the password
+2020-09-05 12:32:45,946 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:32:56,738 [main] INFO yoloj - user selected the code
+2020-09-05 12:32:59,974 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:33:00,490 [main] INFO yoloj - User is on next page
+2020-09-05 12:33:01,501 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:33:06,452 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:33:09,043 [main] INFO yoloj - User entered fee
+2020-09-05 12:33:12,029 [main] INFO yoloj - User entered pincode
+2020-09-05 12:33:20,821 [main] INFO yoloj - User selected the country
+2020-09-05 12:33:26,044 [main] INFO yoloj - User entered city name
+2020-09-05 12:33:29,309 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:33:33,329 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:33:36,062 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:33:38,189 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:33:44,819 [main] INFO yoloj - User selected Service type
+2020-09-05 12:33:51,083 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:33:53,770 [main] INFO yoloj - User is on next page
+2020-09-05 12:34:01,078 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:34:02,392 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:34:09,681 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:36:29,987 [main] INFO yoloj - URL is opened
+2020-09-05 12:36:39,027 [main] INFO yoloj - User entered the first name
+2020-09-05 12:36:39,938 [main] INFO yoloj - User entered the last name
+2020-09-05 12:36:44,706 [main] INFO yoloj - User entered the mail
+2020-09-05 12:36:46,948 [main] INFO yoloj - User entered the password
+2020-09-05 12:36:49,194 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:36:59,578 [main] INFO yoloj - user selected the code
+2020-09-05 12:37:03,377 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:37:03,841 [main] INFO yoloj - User is on next page
+2020-09-05 12:37:04,864 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:37:10,396 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:37:13,404 [main] INFO yoloj - User entered fee
+2020-09-05 12:37:16,449 [main] INFO yoloj - User entered pincode
+2020-09-05 12:37:25,101 [main] INFO yoloj - User selected the country
+2020-09-05 12:37:30,146 [main] INFO yoloj - User entered city name
+2020-09-05 12:37:33,075 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:37:37,102 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:37:39,699 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:37:41,750 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:37:48,433 [main] INFO yoloj - User selected Service type
+2020-09-05 12:37:54,573 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:37:57,184 [main] INFO yoloj - User is on next page
+2020-09-05 12:38:04,501 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:38:05,777 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:38:14,092 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:43:50,227 [main] INFO yoloj - URL is opened
+2020-09-05 12:43:59,361 [main] INFO yoloj - User entered the first name
+2020-09-05 12:44:00,225 [main] INFO yoloj - User entered the last name
+2020-09-05 12:44:05,167 [main] INFO yoloj - User entered the mail
+2020-09-05 12:44:07,663 [main] INFO yoloj - User entered the password
+2020-09-05 12:44:10,001 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:44:20,719 [main] INFO yoloj - user selected the code
+2020-09-05 12:44:24,569 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:44:25,033 [main] INFO yoloj - User is on next page
+2020-09-05 12:44:26,075 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:44:31,439 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:44:34,275 [main] INFO yoloj - User entered fee
+2020-09-05 12:44:37,210 [main] INFO yoloj - User entered pincode
+2020-09-05 12:44:46,152 [main] INFO yoloj - User selected the country
+2020-09-05 12:44:51,139 [main] INFO yoloj - User entered city name
+2020-09-05 12:44:54,351 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:44:58,343 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:45:01,146 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:45:03,141 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:45:09,983 [main] INFO yoloj - User selected Service type
+2020-09-05 12:45:16,235 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:45:18,876 [main] INFO yoloj - User is on next page
+2020-09-05 12:45:26,151 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:45:27,519 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:45:35,853 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:47:08,644 [main] INFO yoloj - URL is opened
+2020-09-05 12:47:17,757 [main] INFO yoloj - User entered the first name
+2020-09-05 12:47:18,609 [main] INFO yoloj - User entered the last name
+2020-09-05 12:47:23,695 [main] INFO yoloj - User entered the mail
+2020-09-05 12:47:25,992 [main] INFO yoloj - User entered the password
+2020-09-05 12:47:28,368 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:47:39,907 [main] INFO yoloj - user selected the code
+2020-09-05 12:47:43,045 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:47:43,513 [main] INFO yoloj - User is on next page
+2020-09-05 12:47:44,543 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:47:49,607 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:47:52,424 [main] INFO yoloj - User entered fee
+2020-09-05 12:47:55,314 [main] INFO yoloj - User entered pincode
+2020-09-05 12:48:03,924 [main] INFO yoloj - User selected the country
+2020-09-05 12:48:08,932 [main] INFO yoloj - User entered city name
+2020-09-05 12:48:12,018 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:48:16,179 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:48:19,118 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:48:21,243 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:48:28,081 [main] INFO yoloj - User selected Service type
+2020-09-05 12:48:34,251 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:48:36,923 [main] INFO yoloj - User is on next page
+2020-09-05 12:48:44,171 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:48:45,563 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:48:54,049 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:48:55,650 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:50:19,962 [main] INFO yoloj - URL is opened
+2020-09-05 12:50:29,260 [main] INFO yoloj - User entered the first name
+2020-09-05 12:50:30,136 [main] INFO yoloj - User entered the last name
+2020-09-05 12:50:35,003 [main] INFO yoloj - User entered the mail
+2020-09-05 12:50:37,269 [main] INFO yoloj - User entered the password
+2020-09-05 12:50:39,635 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:50:50,448 [main] INFO yoloj - user selected the code
+2020-09-05 12:50:53,641 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:50:54,113 [main] INFO yoloj - User is on next page
+2020-09-05 12:50:55,115 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:51:00,236 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:51:02,990 [main] INFO yoloj - User entered fee
+2020-09-05 12:51:05,930 [main] INFO yoloj - User entered pincode
+2020-09-05 12:51:14,800 [main] INFO yoloj - User selected the country
+2020-09-05 12:51:19,912 [main] INFO yoloj - User entered city name
+2020-09-05 12:51:23,104 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:51:27,302 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:51:30,029 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:51:32,052 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:51:38,777 [main] INFO yoloj - User selected Service type
+2020-09-05 12:51:45,198 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:51:47,881 [main] INFO yoloj - User is on next page
+2020-09-05 12:51:55,172 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:51:56,562 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:52:04,871 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:52:06,512 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:52:09,497 [main] INFO yoloj - User is on home page
+2020-09-05 12:52:15,045 [main] INFO yoloj - User entered the first name
+2020-09-05 12:52:15,886 [main] INFO yoloj - User entered the last name
+2020-09-05 12:52:20,607 [main] INFO yoloj - User entered the mail
+2020-09-05 12:52:22,956 [main] INFO yoloj - User entered the password
+2020-09-05 12:52:25,227 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:52:36,207 [main] INFO yoloj - user selected the code
+2020-09-05 12:52:41,501 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:52:42,006 [main] INFO yoloj - User is on next page
+2020-09-05 12:52:43,005 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:52:48,010 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:52:50,583 [main] INFO yoloj - User entered fee
+2020-09-05 12:52:53,428 [main] INFO yoloj - User entered pincode
+2020-09-05 12:53:02,125 [main] INFO yoloj - User selected the country
+2020-09-05 12:53:07,129 [main] INFO yoloj - User entered city name
+2020-09-05 12:53:10,293 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:53:14,352 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:53:17,051 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:53:19,114 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:53:28,710 [main] INFO yoloj - User selected Service type
+2020-09-05 12:53:35,029 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:53:37,653 [main] INFO yoloj - User is on next page
+2020-09-05 12:53:43,745 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:53:46,501 [main] INFO yoloj - User selected Individual service details
+2020-09-05 12:53:56,309 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:53:58,028 [main] INFO yoloj - User selected Business service details
+2020-09-05 12:54:00,733 [main] INFO yoloj - User is on home page
+2020-09-05 12:54:06,386 [main] INFO yoloj - User entered the first name
+2020-09-05 12:54:07,324 [main] INFO yoloj - User entered the last name
+2020-09-05 12:54:12,212 [main] INFO yoloj - User entered the mail
+2020-09-05 12:54:14,519 [main] INFO yoloj - User entered the password
+2020-09-05 12:54:16,841 [main] INFO yoloj - User entered the confirm password
+2020-09-05 12:54:28,132 [main] INFO yoloj - user selected the code
+2020-09-05 12:54:32,709 [main] INFO yoloj - User entered the phone number
+2020-09-05 12:54:33,122 [main] INFO yoloj - User is on next page
+2020-09-05 12:54:34,113 [main] INFO yoloj - User entered Organization name
+2020-09-05 12:54:39,037 [main] INFO yoloj - User entered Organization address
+2020-09-05 12:54:41,622 [main] INFO yoloj - User entered fee
+2020-09-05 12:54:44,553 [main] INFO yoloj - User entered pincode
+2020-09-05 12:54:53,163 [main] INFO yoloj - User selected the country
+2020-09-05 12:54:58,007 [main] INFO yoloj - User entered city name
+2020-09-05 12:55:01,292 [main] INFO yoloj - User entered address line 1
+2020-09-05 12:55:05,439 [main] INFO yoloj - User entered address line 2
+2020-09-05 12:55:08,052 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 12:55:10,107 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 12:55:16,012 [main] INFO yoloj - User selected Service type
+2020-09-05 12:55:22,813 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 12:55:25,240 [main] INFO yoloj - User is on next page
+2020-09-05 13:03:34,819 [main] INFO yoloj - URL is opened
+2020-09-05 13:03:44,196 [main] INFO yoloj - User entered the first name
+2020-09-05 13:03:45,108 [main] INFO yoloj - User entered the last name
+2020-09-05 13:03:50,043 [main] INFO yoloj - User entered the mail
+2020-09-05 13:03:52,536 [main] INFO yoloj - User entered the password
+2020-09-05 13:03:54,977 [main] INFO yoloj - User entered the confirm password
+2020-09-05 13:04:06,546 [main] INFO yoloj - user selected the code
+2020-09-05 13:04:09,737 [main] INFO yoloj - User entered the phone number
+2020-09-05 13:04:10,180 [main] INFO yoloj - User is on next page
+2020-09-05 13:04:11,253 [main] INFO yoloj - User entered Organization name
+2020-09-05 13:04:16,309 [main] INFO yoloj - User entered Organization address
+2020-09-05 13:04:19,021 [main] INFO yoloj - User entered fee
+2020-09-05 13:04:21,907 [main] INFO yoloj - User entered pincode
+2020-09-05 13:04:30,622 [main] INFO yoloj - User selected the country
+2020-09-05 13:04:35,918 [main] INFO yoloj - User entered city name
+2020-09-05 13:04:38,929 [main] INFO yoloj - User entered address line 1
+2020-09-05 13:04:43,225 [main] INFO yoloj - User entered address line 2
+2020-09-05 13:04:45,988 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 13:04:47,951 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 13:04:54,667 [main] INFO yoloj - User selected Service type
+2020-09-05 13:05:00,780 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 13:05:03,324 [main] INFO yoloj - User is on next page
+2020-09-05 13:05:10,792 [main] INFO yoloj - User selected Individual service details
+2020-09-05 13:05:12,234 [main] INFO yoloj - User selected Individual service details
+2020-09-05 13:05:20,505 [main] INFO yoloj - User selected Business service details
+2020-09-05 13:05:22,140 [main] INFO yoloj - User selected Business service details
+2020-09-05 13:05:25,157 [main] INFO yoloj - User is on home page
+2020-09-05 13:05:28,815 [main] INFO yoloj - User entered the first name
+2020-09-05 13:05:29,502 [main] INFO yoloj - User entered the last name
+2020-09-05 13:05:32,200 [main] INFO yoloj - User entered the mail
+2020-09-05 13:05:33,894 [main] INFO yoloj - User entered the password
+2020-09-05 13:05:35,572 [main] INFO yoloj - User entered the confirm password
+2020-09-05 13:06:28,749 [main] INFO yoloj - user selected the code
+2020-09-05 13:06:34,252 [main] INFO yoloj - User entered the phone number
+2020-09-05 13:06:34,738 [main] INFO yoloj - User is on next page
+2020-09-05 13:06:35,963 [main] INFO yoloj - User entered Organization name
+2020-09-05 13:06:40,957 [main] INFO yoloj - User entered Organization address
+2020-09-05 13:06:43,512 [main] INFO yoloj - User entered fee
+2020-09-05 13:06:46,374 [main] INFO yoloj - User entered pincode
+2020-09-05 13:06:55,420 [main] INFO yoloj - User selected the country
+2020-09-05 13:07:00,363 [main] INFO yoloj - User entered city name
+2020-09-05 13:07:03,406 [main] INFO yoloj - User entered address line 1
+2020-09-05 13:07:07,524 [main] INFO yoloj - User entered address line 2
+2020-09-05 13:07:10,173 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 13:07:12,301 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 13:07:21,017 [main] INFO yoloj - User selected Service type
+2020-09-05 13:07:26,367 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 13:07:29,478 [main] INFO yoloj - User is on home page
+2020-09-05 13:07:35,677 [main] INFO yoloj - User entered the first name
+2020-09-05 13:07:36,498 [main] INFO yoloj - User entered the last name
+2020-09-05 13:07:41,210 [main] INFO yoloj - User entered the mail
+2020-09-05 13:07:43,497 [main] INFO yoloj - User entered the password
+2020-09-05 13:07:45,814 [main] INFO yoloj - User entered the confirm password
+2020-09-05 13:07:56,645 [main] INFO yoloj - user selected the code
+2020-09-05 13:08:01,937 [main] INFO yoloj - User entered the phone number
+2020-09-05 13:08:02,335 [main] INFO yoloj - User is on next page
+2020-09-05 13:08:03,329 [main] INFO yoloj - User entered Organization name
+2020-09-05 13:08:08,245 [main] INFO yoloj - User entered Organization address
+2020-09-05 13:08:10,808 [main] INFO yoloj - User entered fee
+2020-09-05 13:08:13,631 [main] INFO yoloj - User entered pincode
+2020-09-05 13:08:22,581 [main] INFO yoloj - User selected the country
+2020-09-05 13:08:27,649 [main] INFO yoloj - User entered city name
+2020-09-05 13:08:30,799 [main] INFO yoloj - User entered address line 1
+2020-09-05 13:08:34,768 [main] INFO yoloj - User entered address line 2
+2020-09-05 13:08:37,403 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 13:08:39,456 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 13:08:45,549 [main] INFO yoloj - User selected Service type
+2020-09-05 13:08:52,030 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 13:08:55,290 [main] INFO yoloj - User is on home page
+2020-09-05 13:09:01,981 [main] INFO yoloj - User entered the first name
+2020-09-05 13:09:04,204 [main] INFO yoloj - User entered the last name
+2020-09-05 13:09:08,046 [main] INFO yoloj - User entered the mail
+2020-09-05 13:09:10,979 [main] INFO yoloj - User entered the password
+2020-09-05 13:09:13,798 [main] INFO yoloj - User entered the confirm password
+2020-09-05 13:09:27,078 [main] INFO yoloj - user selected the code
+2020-09-05 13:09:30,292 [main] INFO yoloj - User entered the phone number
+2020-09-05 13:09:30,360 [main] INFO yoloj - User is on next page
+2020-09-05 15:39:02,238 [main] INFO yoloj - URL is opened
+2020-09-05 15:39:12,543 [main] INFO yoloj - User entered the first name
+2020-09-05 15:39:13,451 [main] INFO yoloj - User entered the last name
+2020-09-05 15:39:18,384 [main] INFO yoloj - User entered the mail
+2020-09-05 15:39:20,712 [main] INFO yoloj - User entered the password
+2020-09-05 15:39:23,132 [main] INFO yoloj - User entered the confirm password
+2020-09-05 15:39:34,377 [main] INFO yoloj - user selected the code
+2020-09-05 15:39:37,577 [main] INFO yoloj - User entered the phone number
+2020-09-05 15:39:38,042 [main] INFO yoloj - User is on next page
+2020-09-05 15:39:39,086 [main] INFO yoloj - User entered Organization name
+2020-09-05 15:39:44,268 [main] INFO yoloj - User entered Organization address
+2020-09-05 15:39:46,903 [main] INFO yoloj - User entered fee
+2020-09-05 15:39:49,865 [main] INFO yoloj - User entered pincode
+2020-09-05 15:39:58,673 [main] INFO yoloj - User selected the country
+2020-09-05 15:40:03,666 [main] INFO yoloj - User entered city name
+2020-09-05 15:40:06,764 [main] INFO yoloj - User entered address line 1
+2020-09-05 15:40:10,890 [main] INFO yoloj - User entered address line 2
+2020-09-05 15:40:13,673 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 15:40:15,733 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 15:40:22,684 [main] INFO yoloj - User selected Service type
+2020-09-05 15:40:28,853 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 15:40:31,462 [main] INFO yoloj - User is on next page
+2020-09-05 15:40:38,886 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:40:40,280 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:44:09,083 [main] INFO yoloj - URL is opened
+2020-09-05 15:44:18,565 [main] INFO yoloj - User entered the first name
+2020-09-05 15:44:19,502 [main] INFO yoloj - User entered the last name
+2020-09-05 15:44:24,368 [main] INFO yoloj - User entered the mail
+2020-09-05 15:44:26,717 [main] INFO yoloj - User entered the password
+2020-09-05 15:44:29,085 [main] INFO yoloj - User entered the confirm password
+2020-09-05 15:44:40,598 [main] INFO yoloj - user selected the code
+2020-09-05 15:44:44,680 [main] INFO yoloj - User entered the phone number
+2020-09-05 15:44:45,107 [main] INFO yoloj - User is on next page
+2020-09-05 15:44:46,141 [main] INFO yoloj - User entered Organization name
+2020-09-05 15:44:51,374 [main] INFO yoloj - User entered Organization address
+2020-09-05 15:44:54,120 [main] INFO yoloj - User entered fee
+2020-09-05 15:44:57,154 [main] INFO yoloj - User entered pincode
+2020-09-05 15:45:05,856 [main] INFO yoloj - User selected the country
+2020-09-05 15:45:10,933 [main] INFO yoloj - User entered city name
+2020-09-05 15:45:14,150 [main] INFO yoloj - User entered address line 1
+2020-09-05 15:45:18,401 [main] INFO yoloj - User entered address line 2
+2020-09-05 15:45:21,234 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 15:45:23,247 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 15:45:29,915 [main] INFO yoloj - User selected Service type
+2020-09-05 15:45:35,997 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 15:45:38,623 [main] INFO yoloj - User is on next page
+2020-09-05 15:45:45,931 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:45:47,291 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:49:40,804 [main] INFO yoloj - URL is opened
+2020-09-05 15:49:50,383 [main] INFO yoloj - User entered the first name
+2020-09-05 15:49:51,278 [main] INFO yoloj - User entered the last name
+2020-09-05 15:49:56,253 [main] INFO yoloj - User entered the mail
+2020-09-05 15:49:58,577 [main] INFO yoloj - User entered the password
+2020-09-05 15:50:00,905 [main] INFO yoloj - User entered the confirm password
+2020-09-05 15:50:12,333 [main] INFO yoloj - user selected the code
+2020-09-05 15:50:16,232 [main] INFO yoloj - User entered the phone number
+2020-09-05 15:50:16,694 [main] INFO yoloj - User is on next page
+2020-09-05 15:50:17,728 [main] INFO yoloj - User entered Organization name
+2020-09-05 15:50:22,844 [main] INFO yoloj - User entered Organization address
+2020-09-05 15:50:25,600 [main] INFO yoloj - User entered fee
+2020-09-05 15:50:28,485 [main] INFO yoloj - User entered pincode
+2020-09-05 15:50:37,275 [main] INFO yoloj - User selected the country
+2020-09-05 15:50:42,102 [main] INFO yoloj - User entered city name
+2020-09-05 15:50:45,244 [main] INFO yoloj - User entered address line 1
+2020-09-05 15:50:49,321 [main] INFO yoloj - User entered address line 2
+2020-09-05 15:50:52,055 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 15:50:54,047 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 15:51:00,717 [main] INFO yoloj - User selected Service type
+2020-09-05 15:51:06,792 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 15:51:09,384 [main] INFO yoloj - User is on next page
+2020-09-05 15:51:16,749 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:51:18,125 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:51:26,386 [main] INFO yoloj - User selected Business service details
+2020-09-05 15:51:27,974 [main] INFO yoloj - User selected Business service details
+2020-09-05 15:51:30,886 [main] INFO yoloj - User is on home page
+2020-09-05 15:51:36,212 [main] INFO yoloj - User entered the first name
+2020-09-05 15:51:37,116 [main] INFO yoloj - User entered the last name
+2020-09-05 15:51:41,779 [main] INFO yoloj - User entered the mail
+2020-09-05 15:51:43,971 [main] INFO yoloj - User entered the password
+2020-09-05 15:51:46,222 [main] INFO yoloj - User entered the confirm password
+2020-09-05 15:51:57,258 [main] INFO yoloj - user selected the code
+2020-09-05 15:52:02,007 [main] INFO yoloj - User entered the phone number
+2020-09-05 15:52:02,433 [main] INFO yoloj - User is on next page
+2020-09-05 15:52:03,505 [main] INFO yoloj - User entered Organization name
+2020-09-05 15:52:08,395 [main] INFO yoloj - User entered Organization address
+2020-09-05 15:52:11,071 [main] INFO yoloj - User entered fee
+2020-09-05 15:52:13,953 [main] INFO yoloj - User entered pincode
+2020-09-05 15:52:22,827 [main] INFO yoloj - User selected the country
+2020-09-05 15:52:27,814 [main] INFO yoloj - User entered city name
+2020-09-05 15:52:31,007 [main] INFO yoloj - User entered address line 1
+2020-09-05 15:52:35,203 [main] INFO yoloj - User entered address line 2
+2020-09-05 15:52:37,775 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 15:52:39,831 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 15:52:49,358 [main] INFO yoloj - User selected Service type
+2020-09-05 15:52:55,717 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 15:52:58,549 [main] INFO yoloj - User is on next page
+2020-09-05 15:53:04,756 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:53:07,508 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:53:17,339 [main] INFO yoloj - User selected Business service details
+2020-09-05 15:53:19,094 [main] INFO yoloj - User selected Business service details
+2020-09-05 15:53:22,086 [main] INFO yoloj - User is on home page
+2020-09-05 15:53:27,307 [main] INFO yoloj - User entered the first name
+2020-09-05 15:53:28,144 [main] INFO yoloj - User entered the last name
+2020-09-05 15:53:32,907 [main] INFO yoloj - User entered the mail
+2020-09-05 15:53:35,160 [main] INFO yoloj - User entered the password
+2020-09-05 15:53:37,480 [main] INFO yoloj - User entered the confirm password
+2020-09-05 15:53:48,112 [main] INFO yoloj - user selected the code
+2020-09-05 15:53:52,420 [main] INFO yoloj - User entered the phone number
+2020-09-05 15:53:52,816 [main] INFO yoloj - User is on next page
+2020-09-05 15:53:53,813 [main] INFO yoloj - User entered Organization name
+2020-09-05 15:53:58,707 [main] INFO yoloj - User entered Organization address
+2020-09-05 15:54:01,317 [main] INFO yoloj - User entered fee
+2020-09-05 15:54:04,376 [main] INFO yoloj - User entered pincode
+2020-09-05 15:54:13,336 [main] INFO yoloj - User selected the country
+2020-09-05 15:54:18,170 [main] INFO yoloj - User entered city name
+2020-09-05 15:54:21,230 [main] INFO yoloj - User entered address line 1
+2020-09-05 15:54:25,328 [main] INFO yoloj - User entered address line 2
+2020-09-05 15:54:27,912 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 15:54:30,136 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 15:54:36,212 [main] INFO yoloj - User selected Service type
+2020-09-05 15:54:42,841 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 15:54:44,675 [main] INFO yoloj - User is on home page
+2020-09-05 15:54:49,833 [main] INFO yoloj - User entered the first name
+2020-09-05 15:54:50,621 [main] INFO yoloj - User entered the last name
+2020-09-05 15:54:55,080 [main] INFO yoloj - User entered the mail
+2020-09-05 15:54:57,334 [main] INFO yoloj - User entered the password
+2020-09-05 15:54:59,532 [main] INFO yoloj - User entered the confirm password
+2020-09-05 15:55:11,561 [main] INFO yoloj - user selected the code
+2020-09-05 15:55:16,674 [main] INFO yoloj - User entered the phone number
+2020-09-05 15:55:17,123 [main] INFO yoloj - User is on next page
+2020-09-05 15:55:18,059 [main] INFO yoloj - User entered Organization name
+2020-09-05 15:55:22,930 [main] INFO yoloj - User entered Organization address
+2020-09-05 15:55:25,506 [main] INFO yoloj - User entered fee
+2020-09-05 15:55:28,495 [main] INFO yoloj - User entered pincode
+2020-09-05 15:55:37,756 [main] INFO yoloj - User selected the country
+2020-09-05 15:55:42,653 [main] INFO yoloj - User entered city name
+2020-09-05 15:55:45,626 [main] INFO yoloj - User entered address line 1
+2020-09-05 15:55:49,744 [main] INFO yoloj - User entered address line 2
+2020-09-05 15:55:52,672 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 15:55:54,881 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 15:56:04,266 [main] INFO yoloj - User selected Service type
+2020-09-05 15:56:10,535 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 15:56:13,248 [main] INFO yoloj - User is on next page
+2020-09-05 15:56:19,385 [main] INFO yoloj - User selected Individual service details
+2020-09-05 15:56:20,739 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:00:22,568 [main] INFO yoloj - URL is opened
+2020-09-05 16:00:31,903 [main] INFO yoloj - User entered the first name
+2020-09-05 16:00:32,772 [main] INFO yoloj - User entered the last name
+2020-09-05 16:00:37,645 [main] INFO yoloj - User entered the mail
+2020-09-05 16:00:40,031 [main] INFO yoloj - User entered the password
+2020-09-05 16:00:42,347 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:00:54,572 [main] INFO yoloj - user selected the code
+2020-09-05 16:00:59,293 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:00:59,845 [main] INFO yoloj - User is on next page
+2020-09-05 16:01:00,914 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:01:05,976 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:01:08,572 [main] INFO yoloj - User entered fee
+2020-09-05 16:01:11,448 [main] INFO yoloj - User entered pincode
+2020-09-05 16:01:20,366 [main] INFO yoloj - User selected the country
+2020-09-05 16:01:25,394 [main] INFO yoloj - User entered city name
+2020-09-05 16:01:28,514 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:01:32,851 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:01:35,646 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:01:37,711 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:01:43,836 [main] INFO yoloj - User selected Service type
+2020-09-05 16:01:50,365 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:01:52,133 [main] INFO yoloj - User is on home page
+2020-09-05 16:01:57,506 [main] INFO yoloj - User entered the first name
+2020-09-05 16:01:58,330 [main] INFO yoloj - User entered the last name
+2020-09-05 16:02:03,101 [main] INFO yoloj - User entered the mail
+2020-09-05 16:02:05,400 [main] INFO yoloj - User entered the password
+2020-09-05 16:02:07,725 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:02:19,534 [main] INFO yoloj - user selected the code
+2020-09-05 16:02:24,923 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:02:25,357 [main] INFO yoloj - User is on next page
+2020-09-05 16:02:26,415 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:02:31,345 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:02:33,960 [main] INFO yoloj - User entered fee
+2020-09-05 16:02:36,779 [main] INFO yoloj - User entered pincode
+2020-09-05 16:02:45,505 [main] INFO yoloj - User selected the country
+2020-09-05 16:02:50,285 [main] INFO yoloj - User entered city name
+2020-09-05 16:02:53,341 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:02:57,449 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:03:00,150 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:03:02,247 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:03:11,750 [main] INFO yoloj - User selected Service type
+2020-09-05 16:03:17,966 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:03:20,718 [main] INFO yoloj - User is on next page
+2020-09-05 16:03:26,858 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:03:28,221 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:07:45,182 [main] INFO yoloj - URL is opened
+2020-09-05 16:07:54,486 [main] INFO yoloj - User entered the first name
+2020-09-05 16:07:55,345 [main] INFO yoloj - User entered the last name
+2020-09-05 16:08:00,347 [main] INFO yoloj - User entered the mail
+2020-09-05 16:08:02,671 [main] INFO yoloj - User entered the password
+2020-09-05 16:08:05,019 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:08:16,535 [main] INFO yoloj - user selected the code
+2020-09-05 16:08:22,137 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:08:22,717 [main] INFO yoloj - User is on next page
+2020-09-05 16:08:23,766 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:08:28,991 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:08:31,751 [main] INFO yoloj - User entered fee
+2020-09-05 16:08:34,591 [main] INFO yoloj - User entered pincode
+2020-09-05 16:08:43,448 [main] INFO yoloj - User selected the country
+2020-09-05 16:08:48,607 [main] INFO yoloj - User entered city name
+2020-09-05 16:08:51,810 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:08:55,969 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:08:58,564 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:09:00,621 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:09:10,129 [main] INFO yoloj - User selected Service type
+2020-09-05 16:09:16,491 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:09:19,165 [main] INFO yoloj - User is on next page
+2020-09-05 16:09:25,253 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:09:26,663 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:19:30,894 [main] INFO yoloj - URL is opened
+2020-09-05 16:19:40,380 [main] INFO yoloj - User entered the first name
+2020-09-05 16:19:41,291 [main] INFO yoloj - User entered the last name
+2020-09-05 16:19:46,266 [main] INFO yoloj - User entered the mail
+2020-09-05 16:19:48,642 [main] INFO yoloj - User entered the password
+2020-09-05 16:19:50,974 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:20:03,419 [main] INFO yoloj - user selected the code
+2020-09-05 16:20:08,936 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:20:09,493 [main] INFO yoloj - User is on next page
+2020-09-05 16:20:10,546 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:20:15,756 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:20:18,321 [main] INFO yoloj - User entered fee
+2020-09-05 16:20:21,241 [main] INFO yoloj - User entered pincode
+2020-09-05 16:20:30,329 [main] INFO yoloj - User selected the country
+2020-09-05 16:20:35,449 [main] INFO yoloj - User entered city name
+2020-09-05 16:20:38,624 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:20:43,045 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:20:45,664 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:20:47,762 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:20:57,553 [main] INFO yoloj - User selected Service type
+2020-09-05 16:21:03,645 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:21:06,325 [main] INFO yoloj - User is on next page
+2020-09-05 16:21:11,082 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:21:20,678 [main] INFO yoloj - User is on home page
+2020-09-05 16:24:56,040 [main] INFO yoloj - URL is opened
+2020-09-05 16:25:05,517 [main] INFO yoloj - User entered the first name
+2020-09-05 16:25:06,416 [main] INFO yoloj - User entered the last name
+2020-09-05 16:25:11,399 [main] INFO yoloj - User entered the mail
+2020-09-05 16:25:13,734 [main] INFO yoloj - User entered the password
+2020-09-05 16:25:16,143 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:25:28,625 [main] INFO yoloj - user selected the code
+2020-09-05 16:25:34,221 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:25:34,772 [main] INFO yoloj - User is on next page
+2020-09-05 16:25:35,817 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:25:41,058 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:25:43,727 [main] INFO yoloj - User entered fee
+2020-09-05 16:25:46,795 [main] INFO yoloj - User entered pincode
+2020-09-05 16:25:55,851 [main] INFO yoloj - User selected the country
+2020-09-05 16:26:01,235 [main] INFO yoloj - User entered city name
+2020-09-05 16:26:04,318 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:26:08,724 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:26:11,343 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:26:13,454 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:26:22,832 [main] INFO yoloj - User selected Service type
+2020-09-05 16:26:29,016 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:26:31,662 [main] INFO yoloj - User is on next page
+2020-09-05 16:26:37,669 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:26:47,132 [main] INFO yoloj - User is on home page
+2020-09-05 16:26:52,596 [main] INFO yoloj - User entered the first name
+2020-09-05 16:26:53,436 [main] INFO yoloj - User entered the last name
+2020-09-05 16:26:58,158 [main] INFO yoloj - User entered the mail
+2020-09-05 16:27:00,553 [main] INFO yoloj - User entered the password
+2020-09-05 16:27:02,910 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:27:14,650 [main] INFO yoloj - user selected the code
+2020-09-05 16:27:19,225 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:27:19,670 [main] INFO yoloj - User is on next page
+2020-09-05 16:27:20,671 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:27:25,932 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:27:28,591 [main] INFO yoloj - User entered fee
+2020-09-05 16:27:31,487 [main] INFO yoloj - User entered pincode
+2020-09-05 16:27:40,579 [main] INFO yoloj - User selected the country
+2020-09-05 16:27:45,697 [main] INFO yoloj - User entered city name
+2020-09-05 16:27:48,803 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:27:52,990 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:27:55,600 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:27:57,705 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:28:07,429 [main] INFO yoloj - User selected Service type
+2020-09-05 16:28:10,095 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:28:11,915 [main] INFO yoloj - User is on home page
+2020-09-05 16:28:16,605 [main] INFO yoloj - User entered the first name
+2020-09-05 16:28:16,716 [main] INFO yoloj - User entered the last name
+2020-09-05 16:28:16,854 [main] INFO yoloj - User entered the mail
+2020-09-05 16:28:16,981 [main] INFO yoloj - User entered the password
+2020-09-05 16:28:17,094 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:32:36,846 [main] INFO yoloj - URL is opened
+2020-09-05 16:32:46,151 [main] INFO yoloj - User entered the first name
+2020-09-05 16:32:47,012 [main] INFO yoloj - User entered the last name
+2020-09-05 16:32:51,990 [main] INFO yoloj - User entered the mail
+2020-09-05 16:32:54,322 [main] INFO yoloj - User entered the password
+2020-09-05 16:32:56,762 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:33:08,929 [main] INFO yoloj - user selected the code
+2020-09-05 16:33:14,517 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:33:15,080 [main] INFO yoloj - User is on next page
+2020-09-05 16:33:16,101 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:33:21,205 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:33:23,732 [main] INFO yoloj - User entered fee
+2020-09-05 16:33:26,617 [main] INFO yoloj - User entered pincode
+2020-09-05 16:33:35,408 [main] INFO yoloj - User selected the country
+2020-09-05 16:33:40,308 [main] INFO yoloj - User entered city name
+2020-09-05 16:33:43,451 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:33:47,559 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:33:50,224 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:33:52,243 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:34:01,791 [main] INFO yoloj - User selected Service type
+2020-09-05 16:34:08,039 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:34:10,701 [main] INFO yoloj - User is on next page
+2020-09-05 16:34:16,596 [main] INFO yoloj - User selected Individual service details
+2020-09-05 16:34:26,060 [main] INFO yoloj - User is on home page
+2020-09-05 16:34:32,073 [main] INFO yoloj - User entered the first name
+2020-09-05 16:34:32,895 [main] INFO yoloj - User entered the last name
+2020-09-05 16:34:37,701 [main] INFO yoloj - User entered the mail
+2020-09-05 16:34:39,996 [main] INFO yoloj - User entered the password
+2020-09-05 16:34:42,378 [main] INFO yoloj - User entered the confirm password
+2020-09-05 16:34:53,275 [main] INFO yoloj - user selected the code
+2020-09-05 16:34:57,963 [main] INFO yoloj - User entered the phone number
+2020-09-05 16:34:58,484 [main] INFO yoloj - User is on next page
+2020-09-05 16:34:59,559 [main] INFO yoloj - User entered Organization name
+2020-09-05 16:35:04,462 [main] INFO yoloj - User entered Organization address
+2020-09-05 16:35:06,984 [main] INFO yoloj - User entered fee
+2020-09-05 16:35:09,905 [main] INFO yoloj - User entered pincode
+2020-09-05 16:35:18,748 [main] INFO yoloj - User selected the country
+2020-09-05 16:35:23,518 [main] INFO yoloj - User entered city name
+2020-09-05 16:35:26,805 [main] INFO yoloj - User entered address line 1
+2020-09-05 16:35:31,036 [main] INFO yoloj - User entered address line 2
+2020-09-05 16:35:33,750 [main] INFO yoloj - User entered Organization Registration number
+2020-09-05 16:35:35,757 [main] INFO yoloj - User entered Organization Pin type
+2020-09-05 16:35:45,192 [main] INFO yoloj - User selected Service type
+2020-09-05 16:35:47,946 [main] INFO yoloj - User selected Service Expertise
+2020-09-05 16:35:49,713 [main] INFO yoloj - User is on home page
+2020-09-05 16:35:54,338 [main] INFO yoloj - User entered the first name
+2020-09-05 16:35:54,442 [main] INFO yoloj - User entered the last name
+2020-09-05 16:35:54,574 [main] INFO yoloj - User entered the mail
+2020-09-05 21:18:01,690 [main] INFO yoloj - URL is opened
+2020-09-05 21:18:11,741 [main] INFO yoloj - User entered the first name
+2020-09-05 21:18:12,589 [main] INFO yoloj - User entered the last name
+2020-09-05 21:18:17,393 [main] INFO yoloj - User entered the mail
+2020-09-05 21:18:19,691 [main] INFO yoloj - User entered the password
+2020-09-05 21:18:22,158 [main] INFO yoloj - User entered the confirm password
+2020-09-05 21:18:34,088 [main] INFO yoloj - user selected the code
+2020-09-05 21:18:37,259 [main] INFO yoloj - User entered the phone number
+2020-09-05 21:18:37,795 [main] INFO yoloj - User is on next page
+2020-09-05 21:19:48,664 [main] INFO yoloj - User is on next page
+2020-09-05 21:19:49,115 [main] INFO yoloj - User is on home page
+2020-09-05 21:19:54,578 [main] INFO yoloj - User entered the first name
+2020-09-05 21:19:55,525 [main] INFO yoloj - User entered the last name
+2020-09-05 21:19:57,184 [main] INFO yoloj - User entered the mail
+2020-09-05 21:40:08,999 [main] INFO yoloj - URL is opened
+2020-09-05 21:40:18,243 [main] INFO yoloj - User entered the first name
+2020-09-05 21:40:19,138 [main] INFO yoloj - User entered the last name
+2020-09-05 21:40:24,201 [main] INFO yoloj - User entered the mail
+2020-09-05 21:40:26,587 [main] INFO yoloj - User entered the password
+2020-09-05 21:40:28,898 [main] INFO yoloj - User entered the confirm password
+2020-09-05 21:40:40,609 [main] INFO yoloj - user selected the code
+2020-09-05 21:40:43,767 [main] INFO yoloj - User entered the phone number
+2020-09-05 21:40:44,243 [main] INFO yoloj - User is on next page
+2020-09-05 21:41:49,263 [main] INFO yoloj - User is on next page
+2020-09-05 21:41:49,812 [main] INFO yoloj - User is on home page
+2020-09-05 21:41:55,396 [main] INFO yoloj - User entered the first name
+2020-09-05 21:41:56,223 [main] INFO yoloj - User entered the last name
+2020-09-05 21:42:00,877 [main] INFO yoloj - User entered the mail
+2020-09-05 21:42:03,273 [main] INFO yoloj - User entered the password
+2020-09-05 21:42:05,694 [main] INFO yoloj - User entered the confirm password
+2020-09-05 21:42:15,699 [main] INFO yoloj - user selected the code
+2020-09-05 21:42:19,508 [main] INFO yoloj - User entered the phone number
+2020-09-05 21:42:19,930 [main] INFO yoloj - User is on next page
+2020-09-05 21:43:15,771 [main] INFO yoloj - User is on home page
+2020-09-05 21:43:21,222 [main] INFO yoloj - User entered the first name
+2020-09-05 21:43:22,018 [main] INFO yoloj - User entered the last name
+2020-09-05 21:43:26,643 [main] INFO yoloj - User entered the mail
+2020-09-05 21:43:28,804 [main] INFO yoloj - User entered the password
+2020-09-05 21:43:31,036 [main] INFO yoloj - User entered the confirm password
+2020-09-05 21:43:40,859 [main] INFO yoloj - user selected the code
+2020-09-05 21:43:44,576 [main] INFO yoloj - User entered the phone number
+2020-09-05 21:43:45,026 [main] INFO yoloj - User is on next page
+2020-09-05 21:44:37,367 [main] INFO yoloj - User is on home page
+2020-09-05 21:44:42,916 [main] INFO yoloj - User entered the first name
+2020-09-05 21:44:43,694 [main] INFO yoloj - User entered the last name
+2020-09-05 21:44:48,307 [main] INFO yoloj - User entered the mail
+2020-09-05 21:44:50,520 [main] INFO yoloj - User entered the password
+2020-09-05 21:44:52,822 [main] INFO yoloj - User entered the confirm password
+2020-09-05 21:45:02,857 [main] INFO yoloj - user selected the code
+2020-09-05 21:45:06,534 [main] INFO yoloj - User entered the phone number
+2020-09-05 21:45:07,040 [main] INFO yoloj - User is on next page
+2020-09-05 21:46:02,800 [main] INFO yoloj - User is on home page
+2020-09-05 21:46:08,507 [main] INFO yoloj - User entered the first name
+2020-09-05 21:46:09,375 [main] INFO yoloj - User entered the last name
+2020-09-05 21:46:13,951 [main] INFO yoloj - User entered the mail
+2020-09-05 21:46:16,141 [main] INFO yoloj - User entered the password
+2020-09-05 21:46:18,385 [main] INFO yoloj - User entered the confirm password
+2020-09-05 21:46:28,433 [main] INFO yoloj - user selected the code
+2020-09-05 21:46:31,995 [main] INFO yoloj - User entered the phone number
+2020-09-05 21:46:32,384 [main] INFO yoloj - User is on next page
+2020-09-05 21:47:27,145 [main] INFO yoloj - User is on home page
+2020-09-05 22:22:08,211 [main] INFO yoloj - URL is opened
+2020-09-05 22:22:18,257 [main] INFO yoloj - User entered the first name
+2020-09-05 22:22:20,693 [main] INFO yoloj - User entered the last name
+2020-09-05 22:22:26,104 [main] INFO yoloj - User entered the mail
+2020-09-05 22:22:28,732 [main] INFO yoloj - User entered the password
+2020-09-05 22:22:31,284 [main] INFO yoloj - User entered the confirm password
+2020-09-05 22:22:39,779 [main] INFO yoloj - user selected the code
+2020-09-05 22:22:43,673 [main] INFO yoloj - User entered the phone number
+2020-09-05 22:22:44,207 [main] INFO yoloj - User is on next page
