@@ -57,6 +57,10 @@ Properties pro;
 	return iepath;
 	}
 	
+	public String getEdgePath(){
+		return pro.getProperty("edge");
+	}
+	
 	public String getFirefoxPath()
 	{
 	String firefoxpath=pro.getProperty("firefoxpath");
@@ -130,14 +134,30 @@ Properties pro;
 	public String getCity(){
 		return pro.getProperty("City");
 	}
+	
 	public String getAddress1(){
 		return pro.getProperty("Address1");
 	}
 	
+	public String getAddress2(){
+		return pro.getProperty("Address2");
+	}
 	
+	public String getRegNum(){
+		return pro.getProperty("Registration_Number");
+	}
 	
+	public String getRegPin(){
+		return pro.getProperty("Pin_Type");
+	}
 	
+	public String getImage(){
+		return pro.getProperty("image");
+	}
 	
+	public String getProviderData(){
+		return pro.getProperty("providerRegisterData");
+	}
 	
 	
 	

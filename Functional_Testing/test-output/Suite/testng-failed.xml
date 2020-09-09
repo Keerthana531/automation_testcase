@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.yoloj.utilities.Report_File"/>
-  </listeners>
+  <parameter name="browser" value="chrome"/>
   <test name="Test">
     <classes>
+      <class name="com.yoloj.TestCases.TC_Login_Retest"/>
       <class name="com.yoloj.TestCases.TC_UserRegister_Retest"/>
+      <class name="com.yoloj.TestCases.TC_UserRegister_02"/>
+      <class name="com.yoloj.TestCases.TC_ProviderLogin_Retest"/>
+      <class name="com.yoloj.TestCases.TC_ProviderRegister_Retest"/>
+      <class name="com.yoloj.TestCases.TC_ProviderRegister_OrgDetails"/>
+      <class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Failed suite [Suite] -->

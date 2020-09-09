@@ -86,7 +86,7 @@ public class ProviderRegister_PageObject {
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/button[1]")
 	WebElement ServiceTypelink;
 	
-	@FindBy(xpath = "//*[@id=\"checkboxes-tags-demo\"]")
+	@FindBy(id = "checkboxes-tags-demo")
 	WebElement selectServiceTypelink;
 	
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/button[2]")
@@ -140,8 +140,14 @@ public class ProviderRegister_PageObject {
 	@FindBy(xpath = "/html/body/div/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div[2]/div/div/div/div/div/div/div/ol/li/ol/li[8]/span/button/span")
 	WebElement ninthBusLink;
 	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/button[2]/span[1]")
+	WebElement resetLink;
 	
-  
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/button[1]/span[1]")
+	WebElement backLink;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/button[3]/span[1]")
+	WebElement createLink;
 	
 	public void getProvider(){
 		providerLink.click();
@@ -326,27 +332,20 @@ public class ProviderRegister_PageObject {
 		ninthBusLink.click();
 	}
 	
+	public void gotoBack(){
+		backLink.click();
+	}
 	
+	public void selectCreate(){
+		createLink.click();
+	}
 	
+	public void selectReset(){
+		resetLink.click();
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public String getCreateStatus(){
+		return createLink.getAttribute("tabindex");
+	}
 
 }

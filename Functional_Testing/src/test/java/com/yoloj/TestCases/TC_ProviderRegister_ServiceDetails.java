@@ -1,5 +1,11 @@
 package com.yoloj.TestCases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.ClipboardOwner;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -23,7 +29,7 @@ import com.yoloj.PageObjects.ProviderRegister_PageObject;
 public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 	
 	@Test
-	public void ServideType() throws InterruptedException, IOException{
+	public void ServideType() throws InterruptedException, IOException, AWTException{
 		
 		driver.get(baseURL);
 		logger.info("URL is opened");
@@ -31,44 +37,28 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 		pr = new ProviderRegister_PageObject(driver);
 		Thread.sleep(1000);
 		
-		String path = "C:\\Users\\hp\\Desktop\\ProviderRegisterDatas.xlsx";
-		FileInputStream fis = new FileInputStream(path);
+		//String path = "C:\\Users\\hp\\Desktop\\ProviderRegisterDatas.xlsx";
+		FileInputStream fis = new FileInputStream(providerData);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheet("Services Details");
 		
 		int size = sheet.getLastRowNum() - sheet.getFirstRowNum();
 		System.out.println(size);
 		
-		for(int j=4; j<=size; j++){
+		for(int j=1; j<=size; j++){
 			Actions actions = new Actions(driver);
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			
 			DataFormatter formatter = new DataFormatter();
 			
-			String fname = formatter.formatCellValue(sheet.getRow(j).getCell(0));
-			String lname = formatter.formatCellValue(sheet.getRow(j).getCell(1));
-			String mail =formatter.formatCellValue( sheet.getRow(j).getCell(2));
-			String pass = formatter.formatCellValue(sheet.getRow(j).getCell(3));
-			String cpass = formatter.formatCellValue(sheet.getRow(j).getCell(4));
-			String code =formatter.formatCellValue( sheet.getRow(j).getCell(5));
-			String phone = formatter.formatCellValue(sheet.getRow(j).getCell(6));
-			String orgname = formatter.formatCellValue(sheet.getRow(j).getCell(7));
-			String orgaddress = formatter.formatCellValue( sheet.getRow(j).getCell(8));
-			String fee = formatter.formatCellValue(sheet.getRow(j).getCell(9));
-			String pincode = formatter.formatCellValue(sheet.getRow(j).getCell(10));
-			String country = formatter.formatCellValue(sheet.getRow(j).getCell(11));
-			String cty = formatter.formatCellValue(sheet.getRow(j).getCell(12));
-			String add1 = formatter.formatCellValue( sheet.getRow(j).getCell(13));
-			String add2 = formatter.formatCellValue(sheet.getRow(j).getCell(14));
-			String regnum = formatter.formatCellValue(sheet.getRow(j).getCell(15));
-			String regtype = formatter.formatCellValue(sheet.getRow(j).getCell(16));
-			String stype = formatter.formatCellValue(sheet.getRow(j).getCell(17));
-			String sexpert = formatter.formatCellValue(sheet.getRow(j).getCell(18));
-			String sdetail = formatter.formatCellValue(sheet.getRow(j).getCell(19));
-			String business = formatter.formatCellValue(sheet.getRow(j).getCell(20));
+			String stype = formatter.formatCellValue(sheet.getRow(j).getCell(0));
+			String sexpert = formatter.formatCellValue(sheet.getRow(j).getCell(1));
+			String sdetail = formatter.formatCellValue(sheet.getRow(j).getCell(2));
+			String business = formatter.formatCellValue(sheet.getRow(j).getCell(3));
+			String button = formatter.formatCellValue(sheet.getRow(j).getCell(4));
 			
-			System.out.println(fname+" "+lname+" "+mail+" "+pass+" "+cpass+" "+code+" "+phone+" "+
-			orgname+" "+orgaddress+" "+fee+" "+pincode+" "+country+" "+cty+" "+add1+" "+add2+" "+regnum+" "+regtype+" "+stype+" "+sexpert);
+			System.out.println(fname+" "+lname+" "+mail+" "+pass+" "+ConPass+" "+code+" "+phone+" "+
+					orgName+" "+orgAddress+" "+fee+" "+pinCode+" "+country+" "+city+" "+address1+" "+address2+" "+regNum+" "+pinType+" "+stype+" "+sexpert);
 			
 			
 			pr.getProvider();
@@ -89,7 +79,7 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			pr.getPassword(pass);
 			logger.info("User entered the password");
 			
-			pr.getCPass(cpass);
+			pr.getCPass(ConPass);
 			logger.info("User entered the confirm password");
 			
 			actions.moveToElement(pr.code()).click().perform();
@@ -117,11 +107,11 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			
 			actions.moveToElement(pr.Next()).click().perform();
 			logger.info("User is on next page");
-			pr.getOrgName(orgname);
+			pr.getOrgName(orgName);
 			logger.info("User entered Organization name");
 			Thread.sleep(1000);
 			
-			pr.getOrgAddress(orgaddress);
+			pr.getOrgAddress(orgAddress);
 			logger.info("User entered Organization address");
 			Thread.sleep(1000);
 			
@@ -129,7 +119,7 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			logger.info("User entered fee");
 			Thread.sleep(1000);
 			
-			pr.getPinCode(pincode);
+			pr.getPinCode(pinCode);
 			logger.info("User entered pincode");
 			Thread.sleep(1000);
 			
@@ -139,12 +129,17 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			//System.out.println(list.size());
 			
 			for(int i=0; i<ctry.size(); i++){
-				if(ctry.get(i).getText().equals(country)){
-					System.out.println(ctry.get(i).getText());
-					ctry.get(i).click();
-					logger.info("User selected the country");
+				if(country.isEmpty()){
+					ctry.get(0).click();
 					break;
-					
+				}
+				else{
+					if(ctry.get(i).getText().equals(country)){
+						System.out.println(ctry.get(i).getText());
+						ctry.get(i).click();
+						break;
+							
+					}
 				}
 			}
 			
@@ -153,36 +148,82 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			List<WebElement> ctyy = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')]/li"));
 			
 			for(int k=0; k<ctyy.size(); k++){
-				if(ctyy.get(k).getText().equals("Others")){
-					System.out.println(ctyy.get(k).getText());
-					ctyy.get(k).click();
-					driver.findElement(By.id("otherCitiesLabel")).sendKeys(cty);
-					logger.info("User entered city name");
+				if(city.isEmpty()){
+					ctyy.get(0).click();
 					break;
-					
 				}
-				else if(ctyy.get(k).getText().equals(cty)){
-					System.out.println(ctyy.get(k).getText());
-					ctyy.get(k).click();
-					logger.info("User selected the city");
-					break; 
+				else{
+					if(ctyy.size()<2){
+						if(ctyy.get(k).getText().equals("Others")){
+							System.out.println(ctyy.get(k).getText());
+							ctyy.get(k).click();
+							driver.findElement(By.id("otherCitiesLabel")).sendKeys(city);
+							logger.info("User entered city name");
+							break;
+							
+						}
+					}
+					else{
+						if(ctyy.get(k).getText().equals(city)){
+							System.out.println(ctyy.get(k).getText());
+							ctyy.get(k).click();
+							logger.info("User selected the city");
+							break; 
+						}
+						else if(ctyy.get(k).getText().equals("Others")){
+							System.out.println(ctyy.get(k).getText());
+							ctyy.get(k).click();
+							driver.findElement(By.id("otherCitiesLabel")).sendKeys(city);
+							logger.info("User entered city name");
+							break;
+							
+						}
+					}
 				}
 			}
 			
-			pr.getAddress1(add1);
+			pr.getAddress1(address1);
 			logger.info("User entered address line 1");
 			Thread.sleep(1000);
-			pr.getAddress2(add2);
+			pr.getAddress2(address2);
 			logger.info("User entered address line 2");
 			Thread.sleep(1000);
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
-			pr.getOrgNumber(regnum);
+			pr.getOrgNumber(regNum);
 			logger.info("User entered Organization Registration number");
 			Thread.sleep(1000);
-			pr.getOrgPin(regtype);
+			pr.getOrgPin(pinType);
 			logger.info("User entered Organization Pin type");
 			Thread.sleep(1000);
 			js.executeScript("window.scrollBy(0,2000)");
+			Thread.sleep(1000);
+			driver.findElement(By.id("raised-button-file")).click();
+			logger.info("User selected the image button");
+			Thread.sleep(1000);
+			
+			ClipboardOwner owner = null;
+			String img = System.getProperty("user.dir")+"\\images\\"+image;
+			
+			Robot robot = new Robot();
+			StringSelection attachment = new StringSelection(img);
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(attachment, owner);
+			
+			robot.setAutoDelay(3000);
+			if(image.isEmpty()){
+				robot.keyPress(KeyEvent.VK_CANCEL);
+			}
+			else{
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_K);
+			
+			robot.setAutoDelay(3000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			
+			}
+			logger.info("User selected the image");
 			Thread.sleep(1000);
 			pr.gotoNext();
 			Thread.sleep(1000);
@@ -192,6 +233,7 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			String type[]=stype.split(",");
 			for(String opt: type){
 			Thread.sleep(1000);
+			//driver.findElement(By.id("checkboxes-tags-demo")).sendKeys(opt+Keys.ARROW_DOWN+Keys.ENTER);
 			pr.selectService(opt);
 			Thread.sleep(1000);
 			}
@@ -200,6 +242,7 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 			String expert[]=sexpert.split(",");
 			for(String opt1:expert){
 				Thread.sleep(1000);
+				//driver.findElement(By.id("checkboxes-tags-demo")).sendKeys(opt1+Keys.ARROW_DOWN+Keys.ENTER);
 				pr.selectService(opt1);
 				Thread.sleep(1000);
 			}
@@ -482,22 +525,44 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 					Thread.sleep(1000);
 					pr.getBusiness();
 					Thread.sleep(1000);
-					pr.gotoHome();
-					logger.info("User is on home page");
-					sheet.getRow(j).createCell(19).setCellValue("Success");
-					break;
+					if(button.equals("Reset")){
+						pr.selectReset();
+						logger.info("User selected Reset button");
+						pr.gotoHome();
+						logger.info("User is on home page");
+						sheet.getRow(j).createCell(5).setCellValue("Success");
+						break;
+					}
+					else if(button.equals("Create")){
+						if(pr.getCreateStatus()=="0"){
+							pr.selectCreate();
+							logger.info("User selected create button");
+							pr.gotoHome();
+							logger.info("User is on home page");
+							sheet.getRow(j).createCell(5).setCellValue("Success");
+							break;
+						}
+						else{
+							pr.gotoHome();
+							logger.info("User is on home page");
+							sheet.getRow(j).createCell(5).setCellValue("Fail");
+							break;
+						}
+					}
 				
 			case "-1":
+				pr.gotoBack();
+				logger.info("User is on previous page");
 				pr.gotoHome();
 				logger.info("User is on home page");
 				System.out.println("Fail");
-				sheet.getRow(j).createCell(7).setCellValue("Fail");
+				sheet.getRow(j).createCell(5).setCellValue("Fail");
 				break;
 		
 			}
 		}
 
-		FileOutputStream fos = new FileOutputStream(path);
+		FileOutputStream fos = new FileOutputStream(providerData);
 		wb.write(fos);
 		wb.close();
 	}

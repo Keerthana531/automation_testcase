@@ -32,10 +32,10 @@ public class TC_ProviderRegister_Retest extends BaseClass {
 		pr = new ProviderRegister_PageObject(driver);
 		Thread.sleep(1000);
 		
-		String path = "C:\\Users\\hp\\Desktop\\ProviderRegisterDatas.xlsx";
-		FileInputStream fis = new FileInputStream(path);
+		//String path = "C:\\Users\\hp\\Desktop\\ProviderRegisterDatas.xlsx";
+		FileInputStream fis = new FileInputStream(providerData);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheet = wb.getSheet("Sheet2");
+		XSSFSheet sheet = wb.getSheet("Partner Details");
 		
 		int size = sheet.getLastRowNum() - sheet.getFirstRowNum();
 		System.out.println(size);
@@ -122,54 +122,12 @@ public class TC_ProviderRegister_Retest extends BaseClass {
 				break;
 			
 			}
-				
-			
-//			if(status=="-1"){
-//				
-//				pr.gotoHome();
-//				logger.info("User is on home page");
-//				System.out.println("Fail");
-//				sheet.getRow(j).createCell(7).setCellValue("Fail");
-//				
-//			}
-//			else if(status=="0"){
-//				actions.moveToElement(pr.Next()).click().perform();
-//				Thread.sleep(2000);
-//				logger.info("User is on next page");
-//				pr.gotoHome();
-//				logger.info("User is on home page");
-//				System.out.println("Success");
-//				sheet.getRow(j).createCell(7).setCellValue("Success");
-//			}
 			
 		}
-		FileOutputStream fos = new FileOutputStream(path);
+		FileOutputStream fos = new FileOutputStream(providerData);
 		wb.write(fos);
 		wb.close();
 	}
 }
 			
-//			pr.gotoNext();
-			
-			
-			
-//			Thread.sleep(1000);
-//			
-//			
-			
-			
-			//actions.moveToElement(pr.Next()).click().perform();
-			
-			
-//			pr.gotoNext();
-//			
-//			driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]")).click();
-//			Thread.sleep(1000);         
-//			                                       
-//			driver.findElement(By.xpath("//*[@id=\"rct-UT0OOuB\"]/ol/li/span/button/span")).click();
-//			List<WebElement> list1 = driver.findElements(By.xpath("//*[@id=\"rct-JFN18q4\"]/ol/li/ol"));
-//			System.out.println(list1.size());
-//			for(int i=0; i<list1.size(); i++){
-//					
-//					System.out.println(list1.get(i).getText());
-			
+

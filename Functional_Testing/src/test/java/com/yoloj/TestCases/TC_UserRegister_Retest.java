@@ -22,7 +22,7 @@ public class TC_UserRegister_Retest extends BaseClass {
 		try{
 		
 		// getting the application url
-		driver.get(baseURL);
+//		driver.get(baseURL);
 		logger.info("URL is opened");
 		
 		//initializing the instance of page object
@@ -30,8 +30,8 @@ public class TC_UserRegister_Retest extends BaseClass {
 		Thread.sleep(2000);
 		
 		// getting the path from base class
-		String path = "C:\\Users\\hp\\Desktop\\User_Register_Test_Data.xlsx";
-		FileInputStream fis = new FileInputStream(path);
+		//String path = "C:\\Users\\hp\\Desktop\\User_Register_Test_Data.xlsx";
+		FileInputStream fis = new FileInputStream(userRegisterPath);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheet("Sheet1");
 		
@@ -40,7 +40,7 @@ public class TC_UserRegister_Retest extends BaseClass {
 		System.out.println(size);
 		
 		//getting the data through looping
-		for(int i=1; i<=size; i++){
+		for(int i=1; i<11; i++){
 			
 			String msg = "";
 			String name = sheet.getRow(i).getCell(0).getStringCellValue();
@@ -116,7 +116,7 @@ public class TC_UserRegister_Retest extends BaseClass {
 		
 		}
 		
-		FileOutputStream fos = new FileOutputStream(path);
+		FileOutputStream fos = new FileOutputStream(userRegisterPath);
 		wb.write(fos);
 		wb.close();
 	
