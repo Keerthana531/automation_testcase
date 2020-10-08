@@ -13,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -73,35 +74,44 @@ ReadConfig readconfig=new ReadConfig();
 	public String[] tradeOptions = {"Trademark registration","Trademark renewal","Trademark registration in India"};
 	public String[] BusinessMisc = {"List Your Business on government website","LEI Code","15CA Form Filing","Getting FDI in India"};
 	
-	
+	public String[] editOption1 = {"Name","Email"};
+	public String[] editOption2 = {"Name","Phone"};
+	public String[] editOption3 = {"Email","Phone"};
 	@BeforeClass
-	@Parameters("browser")
-	public void setup(String br)
+	//@Parameters("browser")
+	public void setup()
 	{			
 		logger = Logger.getLogger("yoloj");
 		PropertyConfigurator.configure("Log4j.properties");
 		
-		
-
+		System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
+		driver=new ChromeDriver();
+//		ChromeOptions option = new ChromeOptions();
+//		option.addArguments("window-size=1400,800");
+//		option.addArguments("headless");
+//		driver = new ChromeDriver(option);
 		
 //		System.setProperty("webdriver.edge.driver",readconfig.getEdgePath());
 //		driver=new EdgeDriver();
 		
-		if(br.equals("chrome"))
-		{
-			System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-			driver=new ChromeDriver();
-		}
-		else if(br.equals("firefox"))
-		{
-			System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxPath());
-			driver = new FirefoxDriver();
-		}
-		else if(br.equals("ie"))
-		{
-			System.setProperty("webdriver.ie.driver",readconfig.getIEPath());
-			driver = new InternetExplorerDriver();
-		}
+//		if(br.equals("chrome"))
+//		{
+//			System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
+//			//driver=new ChromeDriver();
+//			ChromeOptions option = new ChromeOptions();
+//			option.setHeadless(true);
+//			driver = new ChromeDriver(option);
+//		}
+//		else if(br.equals("firefox"))
+//		{
+//			System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxPath());
+//			driver = new FirefoxDriver();
+//		}
+//		else if(br.equals("ie"))
+//		{
+//			System.setProperty("webdriver.ie.driver",readconfig.getIEPath());
+//			driver = new InternetExplorerDriver();
+//		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get(baseURL);

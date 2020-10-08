@@ -5,13 +5,16 @@
   <test name="Test">
     <classes>
      
-    	<class name="com.yoloj.TestCases.TC_Login_Retest"/> 
-    	 <class name="com.yoloj.TestCases.TC_ProviderLogin_Retest"/>
+    	  
+    	<class name="com.yoloj.TestCases.TC_UserRegister_02"/>
+    	
      	 <class name="com.yoloj.TestCases.TC_ProviderRegister_Retest"/>  
       	<class name="com.yoloj.TestCases.TC_ProviderRegister_OrgDetails"/>
-     	<class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails"/> 
-     	<class name="com.yoloj.TestCases.TC_UserRegister_Retest"/>
-    	 <class name="com.yoloj.TestCases.TC_UserRegister_02"/>
+     	<class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails"/>
+     	<class name="com.yoloj.TestCases.TC_UserDashboard"/>
+     	<!-- <class name="com.yoloj.TestCases.TC_Login_Retest"/>  -->
+     	 <!--<class name="com.yoloj.TestCases.TC_ProviderLogin_Retest"/>   -->
+    	 
      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

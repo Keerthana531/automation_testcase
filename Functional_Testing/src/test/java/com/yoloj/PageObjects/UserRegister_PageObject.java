@@ -79,20 +79,38 @@ public class UserRegister_PageObject {
 		txtName.sendKeys(name);
 	}
 	
+	public WebElement name() {
+		return txtName;
+	}
 	public void setEmail(String mail){
 		txtEmail.sendKeys(mail);
+	}
+	
+	public WebElement mail() {
+		return txtEmail;
 	}
 	
 	public void setPassword(String password){
 		txtPass.sendKeys(password);
 	}
 	
+	public WebElement password() {
+		return txtPass;
+	}
 	public void setConfirmPassword(String confirmpass){
 		txtConfirmPass.sendKeys(confirmpass);
 	}
 	
+	public WebElement ConfirmPassword() {
+		return txtConfirmPass;
+	}
+	
 	public void setPhone(String phone){
 		txtPhone.sendKeys(phone);
+	}
+	
+	public WebElement phone() {
+		return txtPhone;
 	}
 	
 	public void createAccount(){
