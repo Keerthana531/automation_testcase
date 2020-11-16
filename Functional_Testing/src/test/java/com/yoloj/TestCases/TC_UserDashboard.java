@@ -20,7 +20,6 @@ import org.testng.annotations.Test;
 import com.yoloj.PageObjects.LoginPageObject;
 import com.yoloj.PageObjects.UserDashboard_PageObject;
 
-import junit.framework.Assert;
 
 public class TC_UserDashboard extends BaseClass{
 	

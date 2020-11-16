@@ -17,7 +17,7 @@ public class ProviderRegister_PageObject {
 		
 	}
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[1]/header/div/img")  
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[1]/header/div/h6/a")  
 	WebElement HomePageLink;   
 	
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div[1]/header/div/div[2]/ul/li[1]/div/div/button/span[1]")   

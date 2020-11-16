@@ -141,25 +141,27 @@ public class TC_ProviderRegister_ServiceDetails extends BaseClass{
 				Thread.sleep(1000);
 				
 				// clicking the country
-				pr.getCountry().click();                                        
+				//pr.getCountry().click();
+				//pr.getCountry().sendKeys("India");
 				Thread.sleep(1000);
-				List<WebElement> ctry = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')][@style='padding-right: 17px; width: calc(100% + 17px);']/li"));
-				//System.out.println(list.size());
-				
-				for(int i=0; i<ctry.size(); i++){
-					if(country.isEmpty()){
-						ctry.get(0).click();
-						break;
-					}
-					else{
-						if(ctry.get(i).getText().equals(country)){
-							System.out.println(ctry.get(i).getText());
-							ctry.get(i).click();
-							break;
-								
-						}
-					}
-				}
+//				List<WebElement> ctry = driver.findElements(By.xpath("//ul[contains(@class,'MuiList-root MuiMenu-list MuiList-padding')][@style='padding-right: 17px; width: calc(100% + 17px);']/li"));
+//				//System.out.println(list.size());
+//				
+//				for(int i=0; i<ctry.size(); i++){
+//					if(country.isEmpty()){
+//						ctry.get(0).click();
+//						break;
+//					}
+//					else{
+//						if(ctry.get(i).getText().equals(country)){
+//							System.out.println(ctry.get(i).getText());
+//							ctry.get(i).click();
+//							break;
+//								
+//						}
+//					}
+//				}
+				logger.info("country is entered");
 				// clicking the city
 				pr.getCity().click();
 				Thread.sleep(1000);

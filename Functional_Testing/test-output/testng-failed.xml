@@ -1,56 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
-  <test name="Test">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.yoloj.TestCases.TC_UserRegister_02"/>
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_Retest"/>
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_OrgDetails"/>
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails"/>
-      <class name="com.yoloj.TestCases.TC_UserDashboard"/>
-      <class name="com.yoloj.TestCases.TC_Login_Retest"/>
-      <class name="com.yoloj.TestCases.TC_ProviderLogin_Retest"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.yoloj.TestCases.TC_UserRegister_02">
-        <methods>
-          <include name="test2"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.yoloj.TestCases.TC_UserRegister_02 -->
       <class name="com.yoloj.TestCases.TC_UserDashboard">
         <methods>
           <include name="userTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.yoloj.TestCases.TC_UserDashboard -->
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_Retest">
-        <methods>
-          <include name="providerRegister"/>
-        </methods>
-      </class> <!-- com.yoloj.TestCases.TC_ProviderRegister_Retest -->
-      <class name="com.yoloj.TestCases.TC_Login_Retest">
-        <methods>
-          <include name="loginTestCase"/>
-        </methods>
-      </class> <!-- com.yoloj.TestCases.TC_Login_Retest -->
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_OrgDetails">
-        <methods>
-          <include name="OrgDetails"/>
-        </methods>
-      </class> <!-- com.yoloj.TestCases.TC_ProviderRegister_OrgDetails -->
-      <class name="com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails">
-        <methods>
-          <include name="ServideType"/>
-        </methods>
-      </class> <!-- com.yoloj.TestCases.TC_ProviderRegister_ServiceDetails -->
-      <class name="com.yoloj.TestCases.TC_ProviderLogin_Retest">
-        <methods>
-          <include name="loginTestCase"/>
-        </methods>
-      </class> <!-- com.yoloj.TestCases.TC_ProviderLogin_Retest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
